@@ -1,0 +1,28 @@
+@import '../../styles/css/base';
+.setInfo-selfContent{
+  width: 280px;
+  .info{
+    padding: 0 20px 10px;
+    display: flex;
+    align-items: center;
+    color: #606266;
+    .drop-name{
+      margin: 0 20px;
+      font-size: 16px;
+      max-width: 80px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  .drop-item{
+    height: 35px;
+    line-height: 35px;
+    .text{
+      margin-left: 10px;
+    }
+    &:hover{
+      background-color: @panel-color;
+    }
+  }
+}

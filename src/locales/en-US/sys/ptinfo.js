@@ -1,0 +1,28 @@
+export default {
+  'e9.sys.ptinfo.title': 'Platform',
+  'e9.sys.ptinfo.base.title': 'Base',
+  'e9.sys.ptinfo.psw.title': 'Security',
+  'e9.sys.ptinfo.ver.title': 'Version',
+
+  'e9.sys.ptinfo.r.id': 'Code',
+  'e9.sys.ptinfo.r.ptinfoName': 'Name',
+  'e9.sys.ptinfo.r.ptinfoConame': 'Company',
+  'e9.sys.ptinfo.r.ptinfoLxr': 'Contacts',
+  'e9.sys.ptinfo.r.ptinfoTel': 'Tel',
+  'e9.sys.ptinfo.r.ptinfoPtver': 'Platform Ver',
+  'e9.sys.ptinfo.r.ptinfoDbver': 'Data Ver',
+  'e9.sys.ptinfo.r.ptinfoPwrule': 'Rule',
+  'e9.sys.ptinfo.r.ptinfoPwlen': 'Min Length',
+  'e9.sys.ptinfo.r.ptinfoPwdiff': 'Same Old And New',
+  'e9.sys.ptinfo.r.ptinfoPwdays': 'Limit Days',
+  'e9.sys.ptinfo.r.ptinfoPwwarndays': 'Warning Days',
+  'e9.sys.ptinfo.r.copyright': 'Copyright',
+  'e9.sys.ptinfo.r.logo': 'Logo',
+  'e9.sys.ptinfo.r.tbg': 'Title Background',
+
+  'e9.sys.ptinfo.r.rule.letter': 'Letter',
+  'e9.sys.ptinfo.r.rule.num': 'Number',
+  'e9.sys.ptinfo.r.rule.ltrnum': 'Letter & Number',
+  'e9.sys.ptinfo.r.rule.ltr2num': 'Letter Or Number',
+  'e9.sys.ptinfo.r.rule.ltrnumchar': 'Letter、Number Or Char',
+};

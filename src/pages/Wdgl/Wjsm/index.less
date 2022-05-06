@@ -1,0 +1,106 @@
+@import '../../../styles/mixin.less';
+
+.document-file{
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  display: flex;
+  .left-section{
+    width: 260px;
+    .title{
+      font-size: 16px;
+      height: 50px;
+      line-height: 50px;
+      padding-left: 25px;
+      border-right: 1px solid #E5E5E5;
+      border-bottom: 1px solid #E5E5E5;
+    }
+    .tree{
+      padding: 15px 30px;
+    }
+  }
+  .right-section{
+    width: calc(100% - 260px);
+    height: 100%;
+    .right-head{
+      height: 50px;
+      padding: 0 30px;
+      position: relative;
+      .flexLeft;
+      .total{
+        margin: 0 50px 0 15px;
+      }
+      .iconfont{
+        position: absolute;
+        right: 30px;
+        color: #999999;
+        cursor: pointer;
+      }
+    }
+    .right-content{
+      background-color: #EEEEEE;
+      height: calc(100% - 50px);
+      position: relative;
+      .param{
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background: #E5E5E5;
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+        .param-title{
+          font-size: 16px;
+          height: 50px;
+          padding-left: 20px;
+          line-height: 50px;
+          border-bottom: 1px solid #D2D2D2;
+        }
+        .form{
+          padding-top: 20px;
+          .item{
+            font-size: 14px;
+            margin-bottom: 25px;
+            .flexCenter;
+            .label{
+              margin-right: 16px;
+              width: 70px;
+              text-align: right;
+            }
+            .select{
+              width: 150px;
+            }
+            .next-checkbox-label{
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      .img-center{
+        position: relative;
+        height: 100%;
+        padding-right: 300px;
+        .flexCenter;
+        .enlarge{
+          position: absolute;
+          right: 320px;
+          bottom: 15px;
+          .plus{
+            color: #fff;
+            background-color: #C5C4C4;
+            border-radius: 100%;
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            text-align: center;
+            line-height: 32px;
+            cursor: pointer;
+          }
+        }
+        .img-target{
+          height: 80%;
+        }
+      }
+    }
+  }
+}

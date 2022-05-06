@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>WPS NP插件测试</title>
+    <script src="./jquery.min.js"></script>
+	<script src="./babel.min.js"></script>
+	<script src="./wps-ext.js" type="text/javascript"></script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        embed {
+            box-shadow: 0 0 2px #d8d8d8;
+        }
+
+        .error {
+            background: #fdff64;
+        }
+
+        #wpsContainer {
+            width: 100%;
+            height: 70%;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+
+    <script>
+        const remoteGetUrl = 'http://dev.wpseco.cn/wps-oa/document/getFileData/4614';
+        const remoteSaveUrl = 'http://dev.wpseco.cn/wps-oa/document/upload';
+
+        function insertImage(shapeType) {
+            const params = {
+                height: 40,
+                width: 200,
+                shapeType: shapeType
+            };
+
+            if (shapeType) {
+                params.picPath = 'http://192.168.2.163:8080/bd.png';
+                params.horizontalPos = 1;
+                params.verticalPos = 1;
+                params.left = 200;
+                params.top = 200;
+            } else {
+                params.picPath = 'C:\\Users\\Administrator\\Desktop\\demo\\bd.png'
+            }
+
+            handlePromise(wpsExt.apis.insertImage(params), () => log('已插入图片'));
+        }
+
+        window.tmpSavePath = '';
+
+        let $log;
+
+        function log(value) {
+            if (!$log) {
+                $log = document.querySelector("#log");
+            }
+
+            if (typeof value === 'string' || value instanceof String) {
+                $log.innerHTML = `${$log.innerHTML}<br/>${value}`;
+                return;
+            }
+
+            let toShow = '';
+            for (let k in value) {
+                toShow = `${toShow}<br />&nbsp;&nbsp;&nbsp;&nbsp;${k}:${value[k]}`
+            }
+
+            $log.innerHTML = `${$log.innerHTML}${toShow}`;
+        }
+
+        function handlePromise(func, then, katch) {
+            var value = func;
+            then ? then(value) : log(value);
+        }
+
+        window.wps2 = null;
+        window.wps1 = null;
+
+        function loadFromLocal(readOnly) {
+            const input = document.querySelector("#absPath");
+            const path = input.value;
+            handlePromise(wpsExt.apis.openLocalDoc({filePath: path, readOnly: readOnly}), (v) => {
+                window.tmpSavePath = v.filePath;
+                log(v.filePath)
+            })
+        }
+    </script>
+</head>
+<body style="height: 100%;">
+<div id="wpsContainer">
+    <div id="wps" style="width: 45%;float: left;height: 100%;padding-right: 4px;"></div>
+    <div id="wps2" style="width: 45%;float: left;height: 100%;padding-right: 4px;"></div>
+    <div id="log" style="float: right;width: 15%;height: 100%;text-align: left;overflow-y: auto;"></div>
+</div>
+
+<input id="absPath" placeholder="请输入要打开的文档的绝对路径" type="text">
+<button onclick="loadFromLocal(false)">从指定路径加载文档</button>
+<button onclick="loadFromLocal(true)">只读模式打开指定路径文档</button>
+<button onclick="handlePromise(wpsExt.apis.newDoc(), () => {log('新建文档完成');window.tmpSavePath = undefined;})">新建文档</button>
+<button onclick="handlePromise(wpsExt.apis.openLocalDoc({}), (v) => {window.tmpSavePath=v.filePath;log(v.filePath)})">
+    打开本地文档
+</button>
+<button onclick="handlePromise(wpsExt.apis.openRemoteDoc({url: remoteGetUrl}), () => {log('打开远程文档完成');window.tmpSavePath = undefined;})">
+    打开远程文档
+</button>
+<button onclick="handlePromise(wpsExt.apis.saveToLocal({savePath: tmpSavePath}), (v) => {log(`已保存到: ${v.savePath}`);window.tmpSavePath=v.savePath;})">
+    保存到本地
+</button>
+<!--<button onclick="handlePromise(wpsExt.apis.saveToRemote({url: remoteSaveUrl}), (v) => {log(`已保存到: ${v}`);window.tmpSavePath=undefined;})">
+    保存到远程
+</button>-->
+<br>
+
+
+<button onclick="handlePromise(wpsExt.apis.setSelectedTextAsBookmark({bookmarkName: 'b1'}), () => log('设置书签完成'))">
+    添加b1书签
+</button>
+<button onclick="handlePromise(wpsExt.apis.setBookmarkValue({bookmarkName: 'b1', bookmarkValue: '书签1'}), () => log('设置书签完成'))">
+    设置b1书签值
+</button>
+<button onclick="handlePromise(wpsExt.apis.deleteBookmark({bookmarkName: 'b1'}), () => log('书签已删除'))">
+    删除书签(b1)
+</button>
+<button onclick="handlePromise(wpsExt.apis.goToBookmark({bookmarkName: 'b1'}), () => log('已定位到书签'))">
+    定位书签(b1)
+</button>
+<button onclick="handlePromise(wpsExt.apis.showBookmarks({show: true}), () => log('已显示书签'))">
+    显示书签
+</button>
+<button onclick="handlePromise(wpsExt.apis.showBookmarks({show: false}), () => log('已隐藏书签'))">
+    隐藏书签
+</button>
+<button onclick="handlePromise(wpsExt.apis.getBookmarkText({bookmarkName: 'b1'}))">
+    获取b1书签文本
+</button>
+<button onclick="handlePromise(wpsExt.apis.getBookmarkCount({}))">获取书签个数</button>
+<button onclick="handlePromise(wpsExt.apis.bookmarkExists({bookmarkName: 'b1'}))">是否存在书签b1
+</button>
+<button onclick="handlePromise(wpsExt.apis.bookmarkExists({bookmarkName: 'b2'}))">是否存在书签b2
+</button>
+<br/>
+
+<button onclick="handlePromise(wpsExt.apis.printPreview({}), () => log('已显示打印预览窗口'))">打印预览</button>
+<!--<button onclick="handlePromise(wpsExt.apis.printDoc({}), () => log('已显示打印窗口'))">打印文档</button>-->
+<br/>
+
+<button onclick="handlePromise(wpsExt.apis.setUserName({userName: '黄'}), () => log('设置用户名成功'))">
+    设置用户名为 黄
+</button>
+<button onclick="handlePromise(wpsExt.apis.protect({protectionType: 3, password: '123'}), () => log('设置保护完成'))">
+    设置保护
+</button>
+<button onclick="handlePromise(wpsExt.apis.unprotect({password: '123'}), () => log('取消保护完成'))">
+    取消保护
+</button>
+<button onclick="handlePromise(wpsExt.apis.findAndReplace({from: '接口', to: 'jie kou'}), () => log('查找并替换完成'))">
+    查找并替换“接口”
+</button>
+<button onclick="handlePromise(wpsExt.apis.acceptAllRevisions({}), () => log('接受修订完成'))">
+    接受所有修订
+</button>
+<button onclick="handlePromise(wpsExt.apis.showDialog({wdWordDialog: 174}), () => log('已弹出提示框'))">弹出提示框</button>
+<br/>
+
+<button onclick="handlePromise(wpsExt.apis.setTableCellValue({tableIndex: 1, colIndex: 4, rowIndex: 2, text: '123'}), () => log('设置单元格的值完成'))">
+    设置单元格值
+</button>
+<button onclick="handlePromise(wpsExt.apis.docProtectExceptCell({tableIndex: 1, cellList: [{colIndex: 1, rowIndex: 1}, {colIndex: 3, rowIndex: 3}], password: '123'}), () => log('设置表格保护完成'))">
+    表格保护
+</button>
+<button onclick="handlePromise(wpsExt.apis.getProtectionType({}))">获取保护类型</button>
+<!--<button class="error"
+        onclick="handlePromise(wpsExt.apis.goToTable({tableIndex: 1, colIndex: 1, rowIndex: 2}), () => log('表定位完成'))">
+    定位到表格1-1-2
+</button>
+<button onclick="handlePromise(wpsExt.apis.addTableColumn({tableIndex: 1}), () => log('插入列完成'))">
+    末尾插入列
+</button>
+<button class="error"
+        onclick="handlePromise(wpsExt.apis.addTableColumn({tableIndex: 1, colIndex: 2}), () => log('插入列完成'))">
+    第二列前插入列
+</button>
+<button onclick="handlePromise(wpsExt.apis.addTableRow({tableIndex: 1}), () => log('插入行完成'))">
+    末尾插入行
+</button>
+<button class="error"
+        onclick="handlePromise(wpsExt.apis.addTableRow({tableIndex: 1, rowIndex: 2}), () => log('插入行完成'))">
+    第二行前插入行
+</button>
+<button class="error"
+        onclick="handlePromise(wpsExt.apis.deleteTableColumn({tableIndex: 1, colIndex: 2}), () => log('删除列完成'))">
+    删除第二列
+</button>
+<button class="error"
+        onclick="handlePromise(wpsExt.apis.deleteTableRow({tableIndex: 1, rowIndex: 2}), () => log('删除行完成'))">
+    删除第二行
+</button>-->
+<button class="error" onclick="handlePromise(wpsExt.apis.getTableCellValue({tableIndex: 1, colIndex: 1, rowIndex: 2}))">
+    获取表格1-1-2值
+</button>
+<button class="error" onclick="handlePromise(wpsExt.apis.getTableRowCount({tableIndex: 1}))">
+    获取表格1行数
+</button>
+<button class="error" onclick="handlePromise(wpsExt.apis.getTableColCount({tableIndex: 1}))">
+    获取表格1列数
+</button>
+<button class="error" onclick="handlePromise(wpsExt.apis.getTableRowCount({tableIndex: 1, colIndex: 3}))">
+    获取表格1-3行数
+</button>
+<button class="error" onclick="handlePromise(wpsExt.apis.getTableColCount({tableIndex: 1, rowIndex: 2}))">
+    获取表格1-2列数
+</button>
+<button class="error" onclick="handlePromise(wpsExt.apis.getTableCount({}))">获取表格数量
+</button>
+<!--<button class="error" onclick="handlePromise(wpsExt.apis.getTableTextIndex({tableIndex: 1, text: 'here'}))">
+    获取here索引
+</button>
+<button class="error" onclick="handlePromise(wpsExt.apis.getTableTextOccurRowCount({tableIndex: 1, text: 'here'}))">
+    here出现行数
+</button>
+<br/>
+
+<!--<button onclick="insertImage(false)">插入本地非粘贴型图片</button>
+<button onclick="insertImage(true)">插入网络上粘贴型图片</button>
+<br/>-->
+<button onclick="handlePromise(wpsExt.apis.insertText({text: '文字'}), () => log('插入文本完成'))">
+    插入文字
+</button>
+<!--<button onclick="handlePromise(wpsExt.apis.shadeEditableRanges({show: true}), () => log('突出可编辑区域完成'))">
+    突出可编辑区域
+</button>
+<button onclick="handlePromise(wpsExt.apis.shadeEditableRanges({show: false}), () => log('隐藏可编辑区域完成'))">
+    隐藏可编辑区域
+</button>
+<button onclick="handlePromise(wpsExt.apis.insertHyperlink({address: 'http://baidu.com', text: '百度超链接'}), () => log('插入超链接完成'))">-->
+    插入超链接
+</button>
+<button onclick="handlePromise(wpsExt.apis.getWPSVersion())">获取WPS版本</button>
+<button onclick="handlePromise(wpsExt.apis.getSelectedText({}))">
+    获取选中文本
+</button>
+<br>
+<!--<button onclick="handlePromise(wpsExt.apis.setDocProperty({name: 'Company', value: 'True', type: wpsExt.enums.docProperty.msoPropertyString}), () => log('设置文档属性完成'))">
+    设置文档属性
+</button>
+<button onclick="handlePromise(wpsExt.apis.deleteDocProperty({name: 'Company'}), () => log('删除文档属性完成'))">删除文档属性</button>-->
+
+
+<script>
+    (function () {
+        wps1 = Wps.createNew(document.querySelector('#wps'));
+        //wps2 = Wps.createNew(document.querySelector('#wps2'));
+
+        window.wpsExt = wps1;
+
+        function __f() {
+            try {
+                wps1.apis.newDoc({});
+                //wps2.apis.newDoc({});
+            } catch (e) {
+                setTimeout(__f, 500);
+            }
+        }
+
+        setTimeout(__f, 500);
+    })();
+</script>
+
+</body>
+</html>

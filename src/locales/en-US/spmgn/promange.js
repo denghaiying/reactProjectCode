@@ -1,0 +1,32 @@
+export default {
+  'e9.spmgn.promange.title': 'Project manager',
+  'e9.spmgn.promange.pmgndirCode': 'System code',
+  'e9.spmgn.promange.pmgndirName': 'System name',
+  'e9.spmgn.promange.pmgndirQnpc': 'QNPC',
+  'e9.spmgn.promange.pmgndirQlxr': 'QNPC linkman',
+  'e9.spmgn.promange.pmgndirQtel': 'QNPC tel',
+  'e9.spmgn.promange.pmgndirCjgs': 'Construction company',
+  'e9.spmgn.promange.pmgndirClxr': 'Construction company principal',
+  'e9.spmgn.promange.pmgndirCtel': 'Construction company tel',
+  'e9.spmgn.promange.pmgndirBiddrq': 'Tender out date',
+  'e9.spmgn.promange.pmgndirCheckrq': 'Acceptance date',
+  'e9.spmgn.promange.pmgndirStatus': 'Status',
+  'e9.spmgn.promange.pmgndirYwgs': 'Operation company',
+  'e9.spmgn.promange.pmgndirYlxr': 'Operation company linkman',
+  'e9.spmgn.promange.pmgndirYtel': 'Operation company tel',
+  'e9.spmgn.promange.pmgndirYwzq': 'Operation period',
+  'e9.spmgn.promange.pmgndirIntro': 'System introduction',
+  'e9.spmgn.promange.pmgndirFid': 'Last system',
+
+  'e9.spmgn.promange.status0': 'Reading',
+  'e9.spmgn.promange.status1': 'Bidding',
+  'e9.spmgn.promange.status2': 'Building',
+  'e9.spmgn.promange.status3': 'Checking',
+  'e9.spmgn.promange.status4': 'Off-line',
+  'e9.spmgn.promange.deleteP': 'Delete by batch',
+
+  'e9.spmgn.promange.pleaseSelect': 'Please select one',
+  'e9.spmgn.promange.deleteError': 'Server error',
+
+  'e9.spmgn.promange.leader': 'project leader',
+};

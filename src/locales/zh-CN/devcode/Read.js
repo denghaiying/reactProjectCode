@@ -1,0 +1,15 @@
+export default {
+  'e9.devcode.Read.title': '在线阅读',
+  'e9.devcode.Read.name': '名称',
+  'e9.devcode.Read.lastsubmit': '最后提交',
+  'e9.devcode.Read.lastupdate': '最后更新',
+  'e9.devcode.Read.copy': '克隆',
+  'e9.devcode.Read.decode': '代码',
+  'e9.devcode.Read.file': '所有文件',
+  'e9.devcode.Read.cyj': '次提交',
+  'e9.devcode.Read.fz': '个分支',
+  'e9.devcode.Read.yh': '个用户',
+  'e9.devcode.Read.idea': 'Web IDE',
+  'e9.devcode.Read.last': '最后提交于',
+  'e9.devcode.Read.size': 'KB存储',
+};

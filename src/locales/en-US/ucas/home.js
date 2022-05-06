@@ -1,0 +1,16 @@
+export default {
+  'eps.home.projectName': 'projectName',
+  'eps.home.unitProject': 'unitProject',
+  'eps.home.startDate': 'startDate',
+  'eps.home.endDate': 'endDate',
+  'eps.home.projectSchedule': 'projectSchedule',
+  'eps.home.currentState': 'currentState',
+  'eps.home.createProject': 'createProject',
+  'eps.home.progclocation': 'progclocation',
+  'eps.home.projsdw': 'development unit',
+  'eps.home.prolxpzdw': ' approval unit',
+  'eps.home.prosjdw': 'design unit',
+  'eps.home.projldw': 'supervising unit',
+  'eps.home.prokcdw': 'exploration unit',
+  'eps.home.proghxkzh': 'Planning License number',
+};

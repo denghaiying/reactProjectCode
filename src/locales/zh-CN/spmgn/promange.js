@@ -1,0 +1,32 @@
+export default {
+  'e9.spmgn.promange.title': '项目管理',
+  'e9.spmgn.promange.pmgndirCode': '系统编号',
+  'e9.spmgn.promange.pmgndirName': '系统名称',
+  'e9.spmgn.promange.pmgndirQnpc': '业主单位',
+  'e9.spmgn.promange.pmgndirQlxr': '业主单位联系人',
+  'e9.spmgn.promange.pmgndirQtel': '业主单位联系电话',
+  'e9.spmgn.promange.pmgndirCjgs': '承建公司',
+  'e9.spmgn.promange.pmgndirClxr': '承建公司负责人',
+  'e9.spmgn.promange.pmgndirCtel': '承建公司联系电话',
+  'e9.spmgn.promange.pmgndirBiddrq': '招标日期',
+  'e9.spmgn.promange.pmgndirCheckrq': '验收日期',
+  'e9.spmgn.promange.pmgndirStatus': '状态',
+  'e9.spmgn.promange.pmgndirYwgs': '运维公司',
+  'e9.spmgn.promange.pmgndirYlxr': '运维公司联系人',
+  'e9.spmgn.promange.pmgndirYtel': '运维公司联系电话',
+  'e9.spmgn.promange.pmgndirYwzq': '运维周期',
+  'e9.spmgn.promange.pmgndirIntro': '系统简介',
+  'e9.spmgn.promange.pmgndirFid': '上级系统',
+
+  'e9.spmgn.promange.status0': '准备中',
+  'e9.spmgn.promange.status1': '招标中',
+  'e9.spmgn.promange.status2': '建设中',
+  'e9.spmgn.promange.status3': '验收中',
+  'e9.spmgn.promange.status4': '已下线',
+  'e9.spmgn.promange.deleteP': '批量删除',
+
+  'e9.spmgn.promange.pleaseSelect': '请至少选择一项',
+  'e9.spmgn.promange.deleteError': '服务器错误,批量删除失败',
+
+  'e9.spmgn.promange.leader': '项目负责人',
+};

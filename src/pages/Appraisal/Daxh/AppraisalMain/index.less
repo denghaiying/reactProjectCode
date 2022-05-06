@@ -1,0 +1,174 @@
+@import '../../../../styles/mixin.less';
+.oa-manage {
+  position: relative;
+  height: 100%;
+  color: #333;
+  font-size: 14px;
+  background-color: #fff;
+  .title {
+    height: 45px;
+    padding: 0 35px;
+    line-height: 45px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .content {
+    display: flex;
+    height: calc(100% - 45px);
+    margin-bottom: 15px;
+    // overflow-y: auto;
+    .tree {
+      position: absolute;
+      width: 270px;
+      height: 100%;
+      padding: 15px 0;
+      overflow-y: auto;
+      border-right: 1px solid #e5e5e5;
+      transition: transform ease 0.3s;
+      .ant-tree-node-content-wrapper {
+        padding: 0;
+        white-space: nowrap;
+        .ant-tree-title {
+          .textOverflow;
+          display: inline-block;
+          width: 160px;
+        }
+      }
+      .collapse-icon {
+        position: absolute;
+        top: calc(50% - 16px);
+        right: 0;
+        width: 16px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        background: #cfcfd7;
+        border-radius: 6px 0px 0px 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        .icon {
+          padding: 10px 0;
+          color: #fff;
+        }
+        .left-arrow {
+        }
+        .right-arrow {
+          right: -20px;
+          display: none;
+        }
+      }
+    }
+    .right {
+      position: relative;
+      left: 270px;
+      width: calc(100% - 270px);
+      transition: all ease 0.3s;
+      .control {
+        height: 55px;
+        padding-right: 1vw;
+        .flexRight;
+        .input-group {
+          width: 15vw;
+          height: 30px;
+          margin-right: 10px;
+          border: 1px solid #dcdcdc;
+          border-radius: 4px;
+          .flexBetween;
+          .btn-text {
+            position: relative;
+            width: 70px;
+            height: 100%;
+            font-size: 12px;
+            line-height: 30px;
+            text-align: center;
+            border-left: 1px solid #dcdcdc;
+            .hidden {
+              position: absolute;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+            }
+          }
+          .file-input {
+            width: calc(100% - 70px);
+            height: 100%;
+          }
+        }
+      }
+      .my-table {
+        height: calc(100% - 30px);
+        .ant-spin-nested-loading {
+          height: 100%;
+          .ant-spin-container {
+            height: 100%;
+            .ant-table {
+              height: calc(100% - 62px);
+              .ant-table-container {
+                height: 100%;
+                .ant-table-content {
+                  height: 100%;
+                  overflow: auto !important;
+                  .ant-table-body {
+                    height: calc(100% - 39px);
+                  }
+                }
+              }
+            }
+          }
+        }
+        // .ant-spin-nested-loading, .ant-spin-container, .ant-table-container, .ant-table-content, table{
+        //   height: 100%;
+        // }
+        // .ant-table{
+        //   height: calc(100% - 62px);
+        // }
+        .ant-table-expanded-row-fixed {
+          min-height: 570px;
+        }
+        .ant-empty {
+          margin-top: 100px;
+        }
+        .ant-table-thead > tr > th {
+          font-weight: bold;
+          background: #edeeee;
+        }
+        .ant-table-pagination.ant-pagination {
+          padding-right: 20px;
+        }
+        .ant-table-thead > tr > th,
+        .ant-table-tbody > tr > td,
+        .ant-table tfoot > tr > th,
+        .ant-table tfoot > tr > td {
+          padding: 10px 16px;
+          color: #666;
+          font-size: 12px;
+        }
+        .ant-table-tbody > tr {
+          &:nth-child(2n) {
+            & > td {
+              background-color: rgba(238, 238, 238, 0.25);
+            }
+          }
+        }
+      }
+    }
+  }
+  .hideExpand {
+    .tree {
+      transform: translateX(-280px);
+    }
+    .right {
+      width: calc(100% - 20px);
+      transform: translateX(-237px);
+    }
+    .collapse-icon {
+      right: -34px !important;
+      .left-arrow {
+        display: none;
+      }
+      .right-arrow {
+        display: inline !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,219 @@
+@import '../../../../styles/mixin.less';
+html li,body li{
+  list-style:none
+}
+.full-search{
+  background-color: #fff;
+  font-size: 12px;
+  color: #333;
+  .control{
+    height: 40px;
+    padding-left: 4vw;
+    margin-top: 10px;
+    .flexLeft;
+    .link{
+      color: #3F8EFF;
+      font-size: 14px;
+      .icon{
+        &::before{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .tabs{
+    height: 50px;
+    background-color: #F8F8F8;
+    padding-left: 6vw;
+    .next-tabs-bar{
+      border-bottom: 0;
+    }
+    .next-tabs-tab{
+      margin-right: 30px;
+      &.active{
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+    .next-tabs-tab-inner{
+      font-size: 14px;
+      padding: 17px;
+    }
+  }
+  .main-content{
+    display: flex;
+    overflow-x: hidden;
+    .tab-content{
+      //如果将右边代码打开显示后,须将这里的95%改为75%
+      width: 100%;
+      padding: 1px 3px 6px 2vw;
+      transition: all ease .3s;
+
+      .total{
+        font-size: 12px;
+        color: #999999;
+        padding-left: 5px;
+      }
+      .classify{
+        position: relative;
+        padding-left: 90px;
+        padding-right: 90px;
+        margin-top: 5px;
+        min-height: 32px;
+        .label{
+          color: #666;
+          position: absolute;
+          left: 5px;
+          font-size: 14px;
+          top: 5px;
+        }
+        .next-tag-medium{
+          height: 24px;
+          line-height: 22px;
+          margin-right: 20px;
+        }
+        .next-tag-body{
+          font-size: 12px;
+        }
+        .expand{
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 28px !important;
+        }
+      }
+      .expand-menu{
+        border-top: 1px solid #D2D2D2;
+        border-bottom: 1px solid #D2D2D2;
+        height: 196px;
+        opacity: 1;
+        transition: all ease .3s;
+        overflow-y:auto;
+        .expand-li{
+          padding: 0 90px;
+          position: relative;
+          .title{
+            color: #999;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 90px;
+            height: 100%;
+            background-color: #F8F8F8;
+            .flexCenter;
+          }
+          .group{
+            padding: 8px 25px;
+            .item{
+              line-height: 25px;
+              margin-right: 40px;
+              display: inline-block;
+              cursor: pointer;
+            }
+          }
+          .multi{
+            position: absolute;
+            right: 0;
+            padding: 3px 7px;
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
+            top: 10px;
+            color: #999;
+            font-size: 12px;
+          }
+        }
+      }
+      .expand-menu-noflh{
+        border-top: 1px solid #D2D2D2;
+        border-bottom: 1px solid #D2D2D2;
+        height: 154px;
+        opacity: 1;
+        transition: all ease .3s;
+        overflow-y:auto;
+        .expand-li{
+          padding: 0 90px;
+          position: relative;
+          .title{
+            color: #999;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 90px;
+            height: 100%;
+            background-color: #F8F8F8;
+            .flexCenter;
+          }
+          .group{
+            padding: 8px 25px;
+            .item{
+              line-height: 25px;
+              margin-right: 40px;
+              display: inline-block;
+              cursor: pointer;
+            }
+          }
+          .multi{
+            position: absolute;
+            right: 0;
+            padding: 3px 7px;
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
+            top: 10px;
+            color: #999;
+            font-size: 12px;
+          }
+        }
+      }
+
+
+      .sort{
+        margin: 20px 0;
+        .flexLeft;
+        .label{
+          color: #333;
+          width: 50px;
+        }
+        .iconfont{
+          font-size: 14px;
+          color: #999;
+        }
+        .sort-tab{
+          background-color: #fff;
+          &.active{
+            background-color: #3F8EFF;
+            .iconfont{
+              color: #fff;
+            }
+          }
+        }
+        .next-tabs-tab-inner{
+          padding: 4px 12px;
+        }
+      }
+      .tab-inner{
+        margin-top: 0px;
+      }
+    }
+    .right{
+      width: 25%;
+      transition: all ease .3s;
+    }
+  }
+  .hideRight{
+    .tab-content{
+      width: 100%;
+    }
+    .right{
+      width: 0;
+      .arrow{
+        left: -20px;
+      }
+    }
+  }
+  .hideMenu{
+    .expand-menu{
+      height: 0 !important;
+      opacity: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+export default {
+  'e9.testset.title': 'Test Set',
+  'e9.testset.iptcfgType': 'Detection Of Type',
+  'e9.testset.iptcfgCode': 'Code',
+  'e9.testset.iptcfgName': 'Name',
+  'e9.testset.iptcfgExpr': 'Detection Expression',
+  'e9.testset.itemDescription': 'Item Description',
+  'e9.testset.theOriginalType': 'The Original Type',
+  'e9.testset.originalDPI': 'Original DPI',
+  'e9.testset.theOriginalContent': 'The Original Content',
+  'e9.testset.originalEXIF': 'Original EXIF',
+  'e9.testset.theOriginalNumber': 'The Original Number',
+  'e9.testset.tmywpp': 'Item Text Matching',
+  'e9.testset.ywtmpp': 'Original Entry Matching',
+  'e9.testset.tmywnrpp': 'Item Text Content Matching',
+  'e9.testset.tmywslpp': 'The number of entries in the original text matches',
+};

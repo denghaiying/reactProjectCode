@@ -1,0 +1,17 @@
+export default {
+  'e9.datamgn.volume.title': 'Data volume statistics',
+  'e9.datamgn.volume.numCount': 'Data volume statistics',
+  'e9.datamgn.volume.unitsNum': 'Quantity unit',
+  'e9.datamgn.volume.BusinessNum': 'Number of business systems',
+  'e9.datamgn.volume.tableNum': 'Number of data tables',
+  'e9.datamgn.volume.dataNum': 'Total data',
+  'e9.datamgn.volume.yesterdayNum': 'Yesterday’s data increment',
+  'e9.datamgn.volume.week': 'Week',
+  'e9.datamgn.volume.halfYear': 'Half a year',
+  'e9.datamgn.volume.year': 'Year',
+  'e9.datamgn.volume.all': 'All',
+  'e9.datamgn.volume.dataBaseType': 'Type of database',
+  'e9.datamgn.volume.businessSystemDataTotal': 'Total statistics of business system data',
+  'e9.datamgn.volume.businessSystemTableTotal': 'Business system data table number statistics',
+  'e9.datamgn.volume.businessSystemAddTotal': 'Incremental statistics of business system data',
+};

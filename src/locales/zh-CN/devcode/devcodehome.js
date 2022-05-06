@@ -1,0 +1,18 @@
+export default {
+  'e9.devcode.devcodehome.title': '仓库信息',
+  'e9.devcode.devcodehome.clone': '克隆',
+  'e9.devcode.devcodehome.pmgndirId': '所属系统',
+  'e9.devcode.devcodehome.userId': '用户',
+  'e9.devcode.devcodehome.name': '仓库名称',
+  'e9.devcode.devcodehome.description': '项目说明',
+  'e9.devcode.devcodehome.visibility': '可见度等级',
+  'e9.devcode.devcodehome.path': '仓库url',
+  'e9.devcode.devcodehome.private': '私人',
+  'e9.devcode.devcodehome.internal': '内部',
+  'e9.devcode.devcodehome.public': '公开',
+  'e9.devcode.devcodehome.sshClone': '使用SSH克隆',
+  'e9.devcode.devcodehome.httpClone': '使用HTTP克隆',
+  'e9.devcode.devcodehome.cloneInfo': '数据已成功复制',
+  'e9.devcode.devcodehome.strInfo': '路径不能有中文',
+  'e9.devcode.devcodehome.codename': '统一代码管理',
+};

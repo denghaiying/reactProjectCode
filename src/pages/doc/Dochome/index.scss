@@ -1,0 +1,103 @@
+//主页面
+.main-dochome{
+  height:800px;
+}
+//主页面背景色设置
+.mainSecond-dochome{
+    padding: 14px;
+    height:780px;
+    background:#F3F3F3;
+}
+//文档搜索
+.dochome-search{
+  height:380px;
+  background:#FFFFFF;
+  border:1px solid #EEEEEE;
+  border-radius:8px; 
+}
+//所有相同的div的标题共用设置
+.dochome-Title{
+  height:40px;
+  background:#EBECF0;
+  border-radius:8px 8px 0px 0px
+}
+//所有相同的div的字体共用设置
+.dochome-Font{
+  color: #333333 ;
+  margin-left:30px;
+  padding-top:10px;
+  font-size:14px;
+  font-weight:bold;
+}
+//空间使用情况
+.dochome-use{
+  height:380px;
+  background:#FFFFFF;
+  border:1px solid #EEEEEE;
+  border-radius:8px; 
+  margin-left:10px;
+}
+//空间
+.dochome-space{
+  height:30px;
+  text-align: center;
+  font-size:16px;
+  margin-top:20%;
+  font-weight: bold;
+}
+
+// 数据元蓝色背景图片
+.dochome-imgcardblue {
+  width: 100px;
+  height:70px;
+  background:rgba(19,131,217,1);
+  box-shadow:0px 1px 6px 0px rgba(17,59,110,0.23);
+  border-radius:8px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.dochome-spacefont{
+  color:white;
+  text-align: center;
+  padding-top:30px;
+  font-size: 14px;
+}
+
+// 数据元橙色背景图片
+.dochome-imgcardorange {
+  width: 100px;
+  height:70px;
+  background:rgba(253,179,37,1);
+  box-shadow:0px 1px 6px 0px rgba(17,59,110,0.23);
+  border-radius:8px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+// 数据元紫色背景图片
+.dochome-imgcardpurple {
+  width: 100px;
+  height:70px;
+  background:rgba(153,128,242,1);
+  box-shadow:0px 1px 6px 0px rgba(17,59,110,0.23);
+  border-radius:8px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+//文档服务是否启用
+.dochome-enable{
+  height:380px;
+  background:#FFFFFF;
+  border:1px solid #EEEEEE;
+  border-radius:8px; 
+  margin-top:10px;
+}
+//文档类型
+.dochome-type{
+  height:380px;
+  background:#FFFFFF;
+  border:1px solid #EEEEEE;
+  border-radius:8px;
+  margin-top:10px;
+  margin-left:10px;
+}

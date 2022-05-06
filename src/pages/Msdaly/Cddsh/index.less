@@ -1,0 +1,253 @@
+@import "../../../styles/mixin.less";
+.hall-regist {
+  height: auto;
+  background-color: #fff;
+  // border: 1px solid #e5e5e5;
+  font-size: 14px;
+  // overflow: hidden;
+  padding: 15px;
+  .control {
+    height: 70px;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    .next-input {
+      input {
+        height: 32px;
+        line-height: 32px;
+      }
+    }
+    .label {
+      margin: 0 10px;
+    }
+    .my-input {
+      margin-right: 40px;
+      width: 10vw;
+    }
+  }
+  .main-content {
+    padding: 20px;
+    height: calc(100% - 30px);
+    .btns-control {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .common-table {
+      height: calc(100% - 110px);
+      border-top: 0;
+    }
+    .paginate {
+      text-align: right;
+      line-height: 60px;
+    }
+  }
+  .editform {
+    height: calc(100% - 46px);
+    .editContext {
+      position: relative;
+      margin: 0 20px;
+      height: 100% !important;
+      padding: 20px 0;
+      .card {
+        width: 242px;
+        height: 153px;
+        margin: 10px;
+        position: relative;
+        .card-inner {
+          border: 1px dashed #c4c6cf;
+          cursor: pointer;
+          width: 242px;
+          height: 153px;
+          text-align: center;
+          vertical-align: middle;
+          display: table-cell;
+          img {
+            // height: 100% !important;
+            // width: 100% !important;
+            max-width: 100% !important;
+            max-height: 100% !important;
+          }
+          .card-fonticon {
+            font-size: 24px;
+          }
+          .card-inner-text {
+            font-size: 14px;
+          }
+        }
+      }
+      .clsmdiv {
+        width: 100%;
+        border-top: 1px dashed #c4c6cf;
+        .filetitle {
+          border-left: 2px solid #5584ff;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 5px 0px;
+        }
+      }
+      .effooter {
+        position: absolute;
+        // bottom: 25px;
+        right: 20px;
+        margin-top: 10px;
+      }
+      .filelist {
+        // display: inline-block;
+        margin-top: 5px;
+        height: 152px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        .file {
+          float: left;
+          margin-right: 10px;
+          height: 150px;
+          width: 100px;
+          position: relative;
+          .file-inner {
+            border: 1px dashed #c4c6cf;
+            cursor: pointer;
+            width: 100px;
+            height: 150px;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            img {
+              // height: 100% !important;
+              // width: 100% !important;
+              max-width: 100% !important;
+              max-height: 100% !important;
+            }
+          }
+
+          .image-footer {
+            height: 28px;
+            width: 100% !important;
+            position: absolute;
+            bottom: 0px;
+            background-color: #666;
+            opacity: 0;
+            display: -webkit-flex; /* Safari */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            div {
+              width: 50% !important;
+              cursor: pointer;
+              color: #f0f0f0;
+              border-left: 1px solid #f0f0f0;
+              text-align: center;
+            }
+          }
+
+          &:hover {
+            .image-footer {
+              opacity: 1;
+            }
+          }
+        }
+        .file-bottom {
+          float: left;
+          height: 150px;
+          width: 100px;
+          .file-inner {
+            border: 1px dashed #c4c6cf;
+            cursor: pointer;
+            width: 100px;
+            height: 150px;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            .file-inner-text {
+              font-size: 12px;
+            }
+            &:hover {
+              border-color: #2d88f8;
+              color: #2d88f8;
+            }
+          }
+        }
+      }
+      .dakcx {
+        display: flex;
+      }
+    }
+  }
+}
+.fileViewDialog {
+  border: 1px dashed #c4c6cf;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  max-width: 800px !important;
+  max-height: 800px !important;
+  overflow: hidden;
+  img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+}
+
+.picViewDialog {
+  border: 1px dashed #c4c6cf;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  width: 600px !important;
+  height: 500px !important;
+  max-width: 800px !important;
+  max-height: 800px !important;
+  overflow: hidden;
+  img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+}
+.docViewDailog > .next-dialog-body {
+  height: 100% !important;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.docViewDailogContent {
+  border-top: 1px dashed #c4c6cf;
+  height: calc(100% - 10px) !important;
+  width: calc(100vw - 400px) !important;
+  margin: 5px;
+  .docViewDailogContentInner {
+    height: 100% !important;
+    width: calc(100% - 25px) !important;
+    overflow: auto;
+    display: flex;
+    // background-color: rgba(64, 64, 64, 1);
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    .fileContent {
+      margin-top: 10px;
+      width: max-content;
+      max-width: 100%;
+      // touch-action: none;
+      .filePage {
+        margin-top: 5px;
+        text-align: center;
+        .pdfpagecheck {
+          position: relative;
+          text-align: left;
+          //  ##z-index: 9999;
+          // color: #e5e5e5;
+        }
+        .pdfPage {
+          text-align: center;
+          .react-pdf__Page__canvas {
+            display: block;
+            margin: auto;
+            border: 1px solid #666;
+          }
+        }
+      }
+    }
+  }
+}

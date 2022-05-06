@@ -1,0 +1,49 @@
+@import '../../../../styles/mixin.less';
+
+@import '../../../../styles/base.less';
+
+.pic-tab{
+  -webkit-column-width: 200px; 
+  -moz-column-width: 200px; 
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  position: relative;
+  padding-bottom: 80px;
+  .box{
+    padding: 10px 0 0 0;
+    float: left;
+  }
+  .pic{
+    position: relative;
+    &:hover{
+      .shadow{
+        opacity: 1;
+      }
+    }
+    img{
+      width: 240px;
+    }
+    .shadow{
+      position: absolute;
+      width: 100%;
+      height: calc(100% - 4px);
+      background: rgba(69, 69, 69, .35);
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all ease .5s;
+      .shdow-text{
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 10px 15px;
+        .textOverflow;
+      }
+    }
+  }
+  .paginate{
+    position: absolute;
+    bottom: 0;
+  }
+}

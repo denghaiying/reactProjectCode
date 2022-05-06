@@ -1,0 +1,30 @@
+@import '../../../styles/mixin.less';
+
+.dpsrlsz{
+    height: calc(100vh - 200px);
+    width: 100%;
+}
+.eps-table{
+    height: 100%;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    .content{
+        display: flex;
+        margin-bottom: 15px;
+        height: calc(100%);
+        overflow-y: auto;
+        overflow-x: hidden;
+        .right{
+          width: calc(100%-20px);
+          left: 10px;
+          transition: all ease .3s;
+          position: relative;
+          .control{
+            height: 58px;
+            padding-right: 20px;
+          }
+        }
+    }
+}

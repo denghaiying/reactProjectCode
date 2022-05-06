@@ -1,0 +1,150 @@
+@import '../../../../styles/mixin.less';
+.oa-manage {
+  position: relative;
+  height: calc(100% - 3px);
+  color: #333;
+  background-color: #fff;
+  .title {
+    height: 45px;
+    padding: 0 35px;
+    line-height: 45px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .content {
+    display: flex;
+    height: calc(100% - 48px);
+    margin-bottom: 15px;
+    // overflow-y: auto;
+    .tree {
+      position: absolute;
+      width: 270px;
+      height: 94%;
+      // overflow-y: auto;
+      padding: 15px 0;
+      border-right: 1px solid #e5e5e5;
+      transition: transform ease 0.3s;
+      .ant-tree-node-content-wrapper {
+        padding: 0;
+        white-space: nowrap;
+        .ant-tree-title {
+          .textOverflow;
+          display: inline-block;
+          width: 160px;
+        }
+      }
+      .collapse-icon {
+        position: absolute;
+        top: calc(50% - 16px);
+        right: 0;
+        width: 16px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        background: #cfcfd7;
+        border-radius: 6px 0px 0px 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        .icon {
+          padding: 10px 0;
+          color: #fff;
+        }
+      }
+    }
+    .right {
+      position: relative;
+      left: 270px;
+      width: calc(100% - 270px);
+      transition: all ease 0.3s;
+      .control {
+        height: 55px;
+        padding-right: 1vw;
+        .flexLeft;
+        .input-group {
+          width: 15vw;
+          height: 30px;
+          margin-right: 10px;
+          border: 1px solid #dcdcdc;
+          border-radius: 4px;
+          .flexBetween;
+          .btn-text {
+            position: relative;
+            width: 70px;
+            height: 100%;
+            font-size: 12px;
+            line-height: 30px;
+            text-align: center;
+            border-left: 1px solid #dcdcdc;
+            .hidden {
+              position: absolute;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+            }
+          }
+          .file-input {
+            width: calc(100% - 70px);
+            height: 100%;
+          }
+        }
+      }
+      .my-table {
+        height: calc(100% - 55px);
+        .ant-spin-nested-loading {
+          height: 100%;
+          .ant-spin-container {
+            height: 100%;
+            .ant-table {
+              height: calc(100% - 62px);
+              .ant-table-container {
+                height: 100%;
+                .ant-table-content {
+                  height: 100%;
+                  overflow: auto !important;
+                  .ant-table-body {
+                    height: calc(100% - 39px);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .ant-table-expanded-row-fixed {
+          min-height: 100%;
+        }
+        .ant-empty {
+          margin-top: 100px;
+        }
+        // .ant-table-thead > tr > th{
+        //  // background: #EDEEEE;
+        //  // font-weight: bold;
+        // }
+        .ant-table-pagination.ant-pagination {
+          margin: 5px 0 !important;
+          padding-right: 20px;
+          font-size: 12px;
+        }
+        .ant-table-thead > tr > th {
+          padding: 10px 16px;
+        }
+        .ant-table-thead > tr > th,
+        .ant-table-tbody > tr > td,
+        .ant-table tfoot > tr > th,
+        .ant-table tfoot > tr > td {
+          padding: 6px;
+          color: #666;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .hideExpand {
+    .tree {
+      transform: translateX(-260px);
+    }
+    .right {
+      width: calc(100% - 5px);
+      transform: translateX(-260px);
+    }
+  }
+}

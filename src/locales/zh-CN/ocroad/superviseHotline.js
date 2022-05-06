@@ -1,0 +1,28 @@
+export default {
+  'e9.ocroad.superviseHotline.title': '12345监管',
+  'e9.ocroad.superviseHotline.superviseInspect': '是否核查',
+  'e9.ocroad.superviseHotline.supervisecode': '12345监管编号',
+  'e9.ocroad.superviseHotline.superviseaddress': '12345监管地址',
+  'e9.ocroad.superviseHotline.supervisetime': '12345监管时间',
+  'e9.ocroad.superviseHotline.supervisecontent': '12345监管内容',
+  'e9.ocroad.superviseHotline.supervisename': '举报人姓名',
+  'e9.ocroad.superviseHotline.superviseType': '监管类别',
+  'e9.ocroad.superviseHotline.supervisetel': '举报人联系方式',
+  'e9.ocroad.superviseHotline.superviseSource': '监管来源',
+  'e9.ocroad.superviseHotline.zl': '占路',
+  'e9.ocroad.superviseHotline.jl': '掘路',
+  'e9.ocroad.superviseHotline.photo': '图片',
+  'e9.ocroad.superviseHotline.inspect': '核查',
+
+  'e9.ocroad.superviseHotline.haveCheck': '已核查',
+  'e9.ocroad.superviseHotline.notChecked': '未核查',
+  'e9.ocroad.superviseHotline.successFile': '文件上传成功',
+  'e9.ocroad.superviseHotline.errorFile': '文件上传失败',
+  'e9.ocroad.superviseHotline.pldr': '批量导入',
+
+  'e9.ocroad.superviseHotline.citizen': '市民',
+  'e9.ocroad.superviseHotline.video': '视频',
+  'e9.ocroad.superviseHotline.reseau': '网格',
+  'e9.ocroad.superviseHotline.hotline': '12345',
+  'e9.ocroad.superviseHotline.zdsc': '自动生成',
+};

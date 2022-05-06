@@ -1,0 +1,60 @@
+@import '../../styles/mixin.less';
+.header {
+  height: 50px;
+  padding: 0 10px;
+  color: #fff;
+  background: linear-gradient(-90deg, #2646cd, #1c7ff9, #2344bf);
+  .flexBetween;
+  .left {
+    .next-select {
+      .next-input {
+        color: #fff;
+        background-color: transparent;
+        .next-icon {
+          color: #fff;
+        }
+        &:hover {
+          border-color: #fff;
+        }
+      }
+    }
+    .ant-select-arrow {
+      color: #fff;
+    }
+    .flexCenter;
+    .title {
+      margin-left: 10px;
+      color: #eaeaeb;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .app-img {
+      width: 40px;
+    }
+    .app {
+      margin-right: 20px;
+      font-size: 14px;
+    }
+  }
+  .right {
+    .flexCenter;
+    .right-img {
+      width: 32px;
+    }
+    .badge {
+      // margin-right: 25px;
+      // margin-left: 40px;
+      .right-img {
+        margin-right: 0;
+      }
+      .ant-badge-count {
+        box-shadow: unset;
+        transform: scale(0.8);
+      }
+    }
+    .exit {
+      margin-right: 0;
+      margin-left: 40px;
+    }
+  }
+}

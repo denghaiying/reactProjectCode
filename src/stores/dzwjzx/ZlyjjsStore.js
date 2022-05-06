@@ -1,0 +1,172 @@
+import React from 'react';
+import { action, makeObservable, observable, runInAction } from 'mobx';
+import BaseStore from '../BaseStore';
+import fetch from '@/utils/fetch';
+import SysStore from '@/stores/system/SysStore';
+import LoginStore from '@/stores/system/LoginStore';
+import IceNotification from '@icedesign/notification';
+
+class ZlyjjsStore extends BaseStore {
+  // querySjzd 查询数据字典 zdx: 证件名称
+
+  @observable progressValue = 0;
+  @observable percentage = 0;
+  @observable sxjcresult = {};
+  @observable zsxresult = false;
+  @observable wzxresult = false;
+  @observable kyxresult = false;
+  @observable aqxresult = false;
+  @observable jczt = false;
+  @observable jcjg = '';
+  @observable formdata = {};
+  constructor(url, wfenable, oldver = true) {
+    super(url, wfenable, oldver);
+    makeObservable(this);
+  }
+
+  @action xduoJc = async (paramid,jcbc) => {
+    const fd = new FormData();
+    fd.append('id', paramid);
+    fd.append('whrid', SysStore.getCurrentUser().id);
+    fd.append('whr', SysStore.getCurrentUser().yhmc);
+    fd.append('jcbch', jcbc);
+    fd.append('dwmc', SysStore.getCurrentCmp().mc);
+    fd.append('sqdbmc', 'DZWJZXQSD');
+    fetch
+      .post(`/api/eps/control/main/dzwjzxsqd/duoJc`, fd, { responseType: 'json' })
+      .then((resp) => {
+        if (resp.status === 200) {
+          this.progressValue = 40;
+          let timer = null;
+          if (timer == null) {
+            timer = setInterval(() => {
+              const params = { id: paramid };
+              fetch
+                .get(`/api/eps/control/main/dzwjzxsqd/queryForId`, { params })
+                .then((gszxyjsqd) => {
+                  if (gszxyjsqd.data.jczt === 'Y') {
+                    this.jczt = true;
+                    this.progressValue = 100;
+                    this.opt = 'edit';
+                    clearInterval(timer);
+                    fetch
+                      .get(`/api/api/sxjcjgz/sxjcjgxq?jcbc=` + jcbc, {})
+                      .then((sxjcjgxq) => {
+                        const fd = new FormData();
+                        fd.append('id', paramid);
+                        fd.append('jcbch', jcbc);
+                        fd.append(
+                          'zsx',
+                          sxjcjgxq.data.zsx == undefined
+                            ? ''
+                            : sxjcjgxq.data.zsx,
+                        );
+                        fd.append(
+                          'qzx',
+                          sxjcjgxq.data.wzx == undefined
+                            ? ''
+                            : sxjcjgxq.data.wzx,
+                        );
+                        fd.append(
+                          'kyx',
+                          sxjcjgxq.data.kyx == undefined
+                            ? ''
+                            : sxjcjgxq.data.kyx,
+                        );
+                        fd.append(
+                          'aqx',
+                          sxjcjgxq.data.kkx == undefined
+                            ? ''
+                            : sxjcjgxq.data.kkx,
+                        );
+                        fetch
+                          .post(`/api/eps/control/main/dzwjzxsqd/uploadjg`, fd, {
+                            responseType: 'json',
+                          })
+                          .then((resp) => {});
+                        //  this.editRecord = {...v, ...ywresult};
+                      });
+                  } else if (gszxyjsqd.data.jczt === 'N') {
+                    this.jcjg = gszxyjsqd.data.jcjg;
+                  }
+                });
+            }, 10000);
+          }
+        }
+      });
+  };
+
+  @action setTmmer = (a) => {
+    this.progressValue = a;
+  };
+
+  @action xdownloadEEP = async (params) => {
+    this.downloadLoading = true;
+    await fetch
+      .post('/api/eps/control/main/gszxyjcx/xdownloaDgsyjEep', params, {
+        responseType: 'blob',
+      })
+      .then((res) => {
+        if (res.status === 200) {
+          const type =
+            res.headers['context-type'] && 'application/octet-stream';
+          const blob = new Blob([res.data], { type });
+          const url = window.URL.createObjectURL(blob);
+          const aLink = document.createElement('a');
+          aLink.style.display = 'none';
+          aLink.href = url;
+          aLink.setAttribute(
+            'download',
+            decodeURIComponent(params.id + '.eep'),
+          );
+          document.body.appendChild(aLink);
+          aLink.click();
+          document.body.removeChild(aLink);
+          window.URL.revokeObjectURL(url);
+          this.downloadLoading = false;
+        } else {
+          this.downloadLoading = false;
+          Message.error('下载失败！');
+        }
+      });
+  };
+  @action packEEP_2022 = async (params) => {
+    this.downloadLoading = true;
+    await fetch
+      .post('/api/eps/control/main/gszxyjcx/packEEP_2022', params)
+      .then((packres) => {
+        debugger;
+        if (packres.status === 201) {
+          Message.loading('数据包打包成功，开始进行下载，请稍等！');
+          this.packetfilepath = packres.data;
+          const type =
+            packres.headers['context-type'] && 'application/octet-stream';
+          const blob = new Blob([packres.data], { type });
+          const url = window.URL.createObjectURL(blob);
+          const aLink = document.createElement('a');
+          aLink.style.display = 'none';
+          aLink.href = url;
+          const eeppath = packres.data.replace(/\\/g, '/');
+          const fileString = eeppath.split('/');
+          // eslint-disable-next-line no-plusplus
+          for (let i = 0; i < fileString.length; i++) {
+            if (fileString[i].indexOf('.eep') !== -1) {
+              aLink.setAttribute('download', decodeURIComponent(fileString[i]));
+              document.body.appendChild(aLink);
+              aLink.click();
+              document.body.removeChild(aLink);
+              window.URL.revokeObjectURL(url);
+            }
+          }
+        } else {
+          this.downloadLoading = false;
+          Message.error('EEP数据包打包失败！');
+        }
+      })
+      .catch((err) => {
+        Message.error('EEP数据包打包失败！');
+      });
+  };
+}
+
+export default new ZlyjjsStore('/api/eps/control/main/dzwjzxsqd', true, true);

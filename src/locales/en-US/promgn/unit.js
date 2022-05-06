@@ -1,0 +1,28 @@
+export default {
+    'e9.promgn.promgnunit.title': 'registration of participating units',
+
+    'e9.promgn.promgnunit.unitCode': 'The unit number',
+    'e9.promgn.promgnunit.unitName': 'Name of the entity',
+    'e9.promgn.promgnunit.unitJname': 'Unit alias',
+    'e9.promgn.promgnunit.unitPerson': 'Legal representative',
+    'e9.promgn.promgnunit.unitAddress': 'Office address',
+    'e9.promgn.promgnunit.utypeName': 'Unit classification name',
+    'e9.promgn.promgnunit.unitLinkman': 'The contact',
+    'e9.promgn.promgnunit.unitTel': 'contact',
+    'e9.promgn.promgnunit.unitSh': 'ein',
+    'e9.promgn.promgnunit.unitKpdz': 'Billing address',
+    'e9.promgn.promgnunit.unitKpdh': 'Drawer telephone number',
+    'e9.promgn.promgnunit.unitBank': 'deposit bank',
+    'e9.promgn.promgnunit.unitAccount': 'The bank account',
+    'e9.promgn.promgnunit.unitDdate': 'Stop using the date',
+
+    'e9.promgn.promgnunit.ticket': 'The information of make out an invoice',
+    'e9.promgn.promgnunit.zizhi': 'qualification',
+    'e9.promgn.promgnunit.inputname': 'Please enter the name of the company',
+    'e9.promgn.promgnunit.basicinfo': 'The basic information',
+    'e9.promgn.promgnunit.unittlgCode': 'Number of qualification',
+    'e9.promgn.promgnunit.unittlgZzmc': 'Name of qualification',
+    'e9.promgn.promgnunit.unittlgIssue': 'The license issuing unit',
+    'e9.promgn.promgnunit.unittlgIndate': 'The period of validity',
+    'e9.promgn.promgnunit.unittlgFilegrpid': 'The attachment',
+};

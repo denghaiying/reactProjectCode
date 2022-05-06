@@ -1,0 +1,57 @@
+@primary-color: '#3F8EFF';
+html, body{
+  height: 100%;
+  min-width: 1360px;
+  p{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// By Wangxiang.NJ 2021.5.29屏蔽掉该样式，原因：强制拉高了button的高度，导致按钮和其他组件如Input组件一起使用时，明显比其他的高一截出去
+// 如果需要强制改变高度。则到对应的功能中去改变，不要全局改变
+// .next-btn.next-medium{
+//   height: 32px !important;
+//   font-size: 12px !important;
+// }
+
+.next-btn.next-btn-primary{
+  background-color: #3F8EFF !important;
+}
+
+.next-btn.next-btn-primary:focus, .next-btn.next-btn-primary:hover, .next-btn.next-btn-primary.hover{
+  background-color: #2a7ef5 !important;
+}
+
+.next-pagination .next-pagination-item.next-current{
+  background-color: #2a7ef5 !important;
+  border-color: #2a7ef5 !important;
+}
+
+.next-tabs-pure > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab.active{
+  color: #3F8EFF !important;
+}
+
+.next-tabs-pure > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab:before{
+  border-bottom: 2px solid #3F8EFF !important;
+}
+
+.next-table-cell-wrapper{
+  word-break:keep-all;/* 不换行 */
+  white-space:nowrap;/* 不换行 */
+  overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+::-webkit-scrollbar-track {
+	/*外层轨道，可以用display:none让其不显示，也可以添加背景图片*/
+	background: rgba(204, 204, 204, 0.48);
+	border-radius: 2px;
+	display: none;
+}
+
+::-webkit-scrollbar-thumb {
+	/*滚动条里面可以拖动的那部分*/
+	background: rgba(204, 204, 204, 0.6);
+	border-radius: 4px;
+}

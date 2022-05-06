@@ -1,0 +1,17 @@
+export default {
+  'e9.devcode.devcodehome.title': 'Warehouse information',
+  'e9.devcode.devcodehome.clone': 'Clone',
+  'e9.devcode.devcodehome.pmgndirId': 'System',
+  'e9.devcode.devcodehome.userId': 'User',
+  'e9.devcode.devcodehome.name': 'Warehouse name',
+  'e9.devcode.devcodehome.description': 'Project description',
+  'e9.devcode.devcodehome.visibility': 'Visibility level',
+  'e9.devcode.devcodehome.path': 'Warehouse URL',
+  'e9.devcode.devcodehome.private': 'Private',
+  'e9.devcode.devcodehome.internal': 'Internal',
+  'e9.devcode.devcodehome.public': 'Public',
+  'e9.devcode.devcodehome.sshClone': 'Using SSH cloning',
+  'e9.devcode.devcodehome.httpClone': 'Using HTTP cloning',
+  'e9.devcode.devcodehome.cloneInfo': 'Data copied successfully',
+  'e9.devcode.devcodehome.codename': 'Unified code management',
+};

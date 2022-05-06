@@ -1,0 +1,26 @@
+export default {
+  'e9.keytask.ztbgl.title': '招投标管理',
+  'e9.keytask.ztbgl.ztbglCode': '编号',
+  'e9.keytask.ztbgl.ztbglTitle': '标题',
+  'e9.keytask.ztbgl.ztbglType': '类型',
+  'e9.keytask.ztbgl.ztbglFbrq': '发布日期',
+  'e9.keytask.ztbgl.ztbglMoney': '金额',
+  'e9.keytask.ztbgl.fzr': '负责人',
+  'e9.keytask.ztbgl.ssgs': '所属公司',
+  'e9.keytask.ztbgl.lxfs': '联系方式',
+  'e9.keytask.ztbgl.ztbglJfdb': '甲方代表',
+  'e9.keytask.ztbgl.ztbglFjlx': '附件类型',
+  'e9.keytask.ztbgl.filegrpId': '附件',
+  'e9.keytask.ztbgl.sc': '上传',
+
+  'e9.keytask.ztbgl.ztbglType0': '设计招投标',
+  'e9.keytask.ztbgl.ztbglType1': '施工监理招投标',
+  'e9.keytask.ztbgl.ztbglType2': '施工招投标',
+  'e9.keytask.ztbgl.ztbglFjlx0': '招标书',
+  'e9.keytask.ztbgl.ztbglFjlx1': '招标文件',
+  'e9.keytask.ztbgl.ztbglFjlx2': '投标文件',
+  'e9.keytask.ztbgl.ztbglFjlx3': '中标通知书',
+
+  'e9.keytask.ztbgl.zdsc': '自动生成',
+  'e9.keytask.ztbgl.ztbglOwnerphone': '甲方联系方式',
+};

@@ -1,0 +1,70 @@
+.archieve{
+  font-size: 14px;
+  height: 100%;
+  .item{
+    background: url(../assets/img/carousel-img.png) center no-repeat;
+    background-size: cover;
+    height: 180px;
+  }
+  .slick-dots{
+    bottom: 0;
+    li{
+      width: 10px !important;
+      height: 10px !important;
+      button{
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+  .tabs{
+    height: 50px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    .tab{
+      height: 100%;
+      line-height: 50px;
+      font-weight: 500;
+      font-size: 15px;
+    }
+    .active{
+      color: #47A6F0;
+      border-bottom: 2px solid #47A6F0;
+    }
+  }
+  .gap{
+    height: 10px;
+    background-color: #F2F5F5;
+  }
+  .tab-content{
+    height: calc(100% - 240px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #333;
+    .text{
+      line-height: 24px;
+      text-indent: 28px;
+    }
+    .ant-timeline-item{
+      padding-bottom: 10px;
+    }
+    .ant-timeline-item-head{
+      background-color: #999;
+      border-color: #999;
+    }
+    .time-item{
+      span{
+        font-size: 14px;
+        &:nth-child(1) {
+          color: #333;
+          margin-right: 50px;
+        }
+        &:nth-child(2) {
+          color: #999;
+        }
+      }
+    }
+  }
+}

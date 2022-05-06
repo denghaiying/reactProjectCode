@@ -1,0 +1,87 @@
+.archives-apply {
+  height: 100%;
+  padding: 10px 15px;
+  background: #f2f5f5;
+  .inner-content {
+    height: 100%;
+    padding: 15px;
+    background: #fff;
+    border-radius: 0px 0px 5px 5px;
+    .table {
+      margin-bottom: 30px;
+      border: 1px solid #d2d2d2;
+    }
+    .row {
+      display: flex;
+      &:nth-last-child(1) {
+        .cell {
+          border-bottom: 0;
+        }
+      }
+      .cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 35px;
+        font-size: 13px;
+        border-right: 1px solid #d2d2d2;
+        border-bottom: 1px solid #d2d2d2;
+        &:nth-last-child(1) {
+          border-right: 0;
+        }
+      }
+      .input {
+        flex: 2;
+        input {
+          width: 100%;
+          padding: 0 8px;
+          text-align: center;
+          border: 0;
+          outline: none;
+        }
+        .ant-form-item {
+          width: 100%;
+          margin-bottom: 0px;
+        }
+        .ant-form-item-explain {
+          margin-top: -8px;
+        }
+        .tipinput {
+          color: red;
+        }
+      }
+    }
+    .upload {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 65px;
+      height: 55px;
+      color: #999;
+      font-size: 12px;
+      border: 1px solid #e5e5e5;
+      span {
+        &:nth-child(1) {
+          margin-bottom: 5px;
+          color: #4178d6;
+          font-size: 30px;
+          line-height: 20px;
+        }
+      }
+    }
+    .btn {
+      width: 80%;
+      height: 35px;
+      margin: 0 auto;
+      margin-top: 20vh;
+      color: #fff;
+      font-size: 14px;
+      line-height: 35px;
+      text-align: center;
+      background: #4178d6;
+      border-radius: 4px;
+    }
+  }
+}

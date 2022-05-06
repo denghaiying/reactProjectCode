@@ -1,0 +1,17 @@
+export default {
+  'e9.datamgn.volume.title': '数据量统计',
+  'e9.datamgn.volume.numCount': '数据量统计',
+  'e9.datamgn.volume.unitsNum': '单位数量',
+  'e9.datamgn.volume.BusinessNum': '业务系统数量',
+  'e9.datamgn.volume.tableNum': '数据表数量',
+  'e9.datamgn.volume.dataNum': '数据总量',
+  'e9.datamgn.volume.yesterdayNum': '昨日数据增量',
+  'e9.datamgn.volume.week': '周',
+  'e9.datamgn.volume.halfYear': '半年',
+  'e9.datamgn.volume.year': '年',
+  'e9.datamgn.volume.all': '全部',
+  'e9.datamgn.volume.dataBaseType': '数据库类型',
+  'e9.datamgn.volume.businessSystemDataTotal': '业务系统数据总量统计',
+  'e9.datamgn.volume.businessSystemTableTotal': '业务系统数据表数量统计',
+  'e9.datamgn.volume.businessSystemAddTotal': '业务系统数据增量统计',
+};

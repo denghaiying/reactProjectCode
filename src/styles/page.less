@@ -1,0 +1,129 @@
+@import './mixin.less';
+.file-transfer{
+  position: relative;
+  display: flex;
+  overflow-x: hidden;
+  .left-tree{
+    width: 220px;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    position: absolute;
+    transform: translateX(-220px);
+    transition: transform .3s ease;
+    border-right: 0;
+  }
+  .file-content{
+    width: calc(100% - 20px);
+    // margin-left: 10px;
+    position: relative;
+    left: 20px;
+    transition: all .3s ease;
+  }
+  /deep/ .next-tabs-pure > .next-tabs-bar{
+    border-bottom: 0;
+  }
+  /deep/ .next-tabs.next-medium .next-tabs-tab-inner{
+    font-size: 12px;
+    padding: 0 30px 15px 30px;
+  }
+  .top{
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+    padding: 15px;
+    // margin-bottom: 10px
+    border-bottom: 0;
+  }
+  .condition{
+    .flexBetween;
+    .right{
+      display: flex;
+      align-items: center;
+      margin-top: -12px;
+      /deep/ .next-search{
+        width: 18vw;
+        .next-input-group{
+          height: 32px;
+          box-sizing: border-box;
+          .next-select{
+            height: 100%;
+          }
+          input{
+            height: 30px;
+            font-size: 12px;
+          }
+          .next-icon-search{
+            display: none;
+          }
+          .next-search-btn-text{
+            font-size: 12px;
+          }
+        }
+      }
+      /deep/ .ant-btn{
+        border-radius: 4px;
+      }
+      .pre_icon{
+        width: 22px;
+        margin-right: 5px;
+      }
+      .more{
+        width: 22px;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  .common-table{
+    border-top: 0;
+    border-left: 1px solid #f0f0f0;
+    td{
+      padding: 9px;
+      color: #666;
+      font-size: 12px;
+      border-right: 1px solid #f0f0f0;
+      border-bottom: 1px solid #f0f0f0;
+      .next-table-cell-wrapper{
+        line-height: 1.7;
+        padding: 0;
+      }
+    }
+    th{
+      padding: 9px;
+      background-color:#EDEEEE;
+      color: #333;
+      font-size: 12px;
+      border: 0;
+      .next-table-cell-wrapper{
+        line-height: 1.7;
+        padding: 0;
+      }
+    }
+  }
+  .paginate{
+    text-align: right;
+    margin-top: 20px;
+  }
+  .bottom{
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+    padding: 15px;
+  }
+}
+.isExpand{
+  .left-tree{
+    transform: translateX(0);
+  }
+  .file-content{
+    width: calc(100% - 220px);
+    left: 220px;
+  }
+  .collapse-icon{
+    right: 0 !important;
+  }
+  .left-arrow{
+    display: inline !important;
+  }
+}

@@ -1,0 +1,56 @@
+// {
+//     "data": {
+//       "syscode": "SCM",
+//       "businesscode": "user",
+//       "archiveinfo":[{
+          
+//       }],
+
+     
+//     }
+//   }
+// <syscode>SCM</syscode>     
+// <businesscode>SCM</businesscode>    
+// <archiveinfo>       
+// <ID>SCTJ202006021</ID>   
+// <BATCHNUM>SCTJ202006021</BATCHNUM >        
+// <CREATEDEPT>晋能电力生产调度系统国峰煤电管理部</CREATEDEPT>        
+// <CREATEDATE>20200602</CREATEDATE>        
+// <CARRIERTYPE>电子</CARRIERTYPE>        
+// <POSTADDRESS>汾阳市三泉镇上文村</POSTADDRESS>        
+// <TELEPHONE></TELEPHONE>  
+// <CONTACTS></CONTACTS>  
+// <SERVERMODEL>IBM3850X6</SERVERMODEL>  
+// <SERVERMANUFACTURER>晋能集团生产管理接入系统</SERVERMANUFACTURER>  
+// <SERVEROTHER></SERVEROTHER>  
+// <OPERATINGSYSTEM>Windows Server 2008 R2 Enterprise</OPERATINGSYSTEM>  
+// <DATABASESYSTEM>oracle10g</DATABASESYSTEM>  
+// <RELATEDSOFTWARE>Adobe Reader</RELATEDSOFTWARE>  
+// <FILERECORDTYPE></FILERECORDTYPE>  
+// <FILERECORDNUM>2</FILERECORDNUM>  
+// <FILERECORDBYTE>77783</FILERECORDBYTE>  
+// <CARRIERFORMAT></CARRIERFORMAT>  
+// <CARRIERNUM></CARRIERNUM>  
+// <CARRIERBAKNUM>1</CARRIERBAKNUM>  
+// <FILECARRIERTYPE></FILECARRIERTYPE>  
+// <FILECARRIERNUM>1</FILECARRIERNUM>       
+// <RECORDTYPE>定长</RECORDTYPE>       
+// <DWMC>山西国峰煤电有限责任公司</DWMC>       
+// <RECORDJG>逻辑</RECORDJG>  
+// <FILECARRIERBAKNUM></FILECARRIERBAKNUM>     
+// </archiveinfo>  
+// <files>
+// <file>    
+// <filename>SC202006031.asip</filename>    
+// <pathtype>2</pathtype>    
+// <ext>.asip</ext> 
+// <path>/SC/20200603/SC202006031.asip</path>    
+// <type>目录结构</type>    
+// <size>0</size>    
+// <server>IBM3850X6</server>    
+// <programe>360zip</programe>    
+// <system>Windows Server 2008 R2 Enterprise</system>    
+// <md5>6e1d45b7bf76bbb36888b3f438fa2c99</md5>    
+// <createtime>2020-06-02 14:49:36</createtime>
+// </file>
+// </files></data>

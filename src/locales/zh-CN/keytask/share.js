@@ -1,0 +1,18 @@
+export default {
+  'e9.keytask.share.title': '项目分享',
+  'e9.keytask.share.shareCode': '分享编号',
+  'e9.keytask.share.shareTitle': '分享标题',
+  'e9.keytask.share.ipaId': '接收人',
+  'e9.keytask.share.projectId': '分享内容',
+  'e9.keytask.share.shareFxr': '分享人',
+  'e9.keytask.share.shareFxsj': '分享时间',
+  'e9.keytask.share.share': '分享',
+  'e9.keytask.share.qxshare': '取消分享',
+  'e9.keytask.share.shareSuccess': '分享成功',
+  'e9.keytask.share.zdsc': '自动生成',
+  'e9.keytask.share.nodelete': '抱歉，您非此项目责任人，无法删除此项目',
+  'e9.keytask.share.nofinish': '抱歉，您非此项目责任人，无法对此项目进行归档',
+  'e9.keytask.share.noshare': '抱歉，您非此项目责任人，无法进行分享',
+  'e9.keytask.share.qrqxfx': '确认取消项目分享？',
+  'e9.keytask.share.sharemessage': '如果确认取消，将收回项目浏览权限！！！',
+};

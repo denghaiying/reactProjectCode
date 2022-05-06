@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+/* 登陆页style */
+.login-page {
+  box-sizing: border-box;
+  height: 100%;
+  padding-top: 6vh;
+  color: #fff;
+  background: url('/images/login-bg.gif') center no-repeat;
+  background-size: 100% 100%;
+  li {
+    list-style: none;
+  }
+  input {
+    font-size: 16px;
+    border: 0;
+    outline: none;
+  }
+  ::-webkit-input-placeholder {
+    color: #999;
+  }
+  :-ms-input-placeholder {
+    color: #999;
+  }
+  .bottom {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/images/bolang.jpg') center no-repeat;
+    background-size: 100% 100%;
+  }
+  .title {
+    position: relative;
+    padding-left: 4vw;
+    img {
+      height: 62px;
+      vertical-align: middle;
+    }
+    .title-name {
+      margin-left: 15px;
+      color: #edf6f6;
+      font-weight: bold;
+      font-size: 32px;
+      letter-spacing: 3px;
+      vertical-align: middle;
+    }
+  }
+  .content {
+    position: relative;
+    top: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .left {
+      position: relative;
+      left: -6vw;
+      margin-right: 3vw;
+      .top-text {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        color: #f9fcfc;
+        font-size: 45px;
+        line-height: normal;
+        letter-spacing: 2px;
+        text-align: center;
+        .higtlight {
+          margin-right: 20px;
+          color: #00f5ff;
+          font-size: 34px;
+        }
+      }
+      .left-bg {
+        width: 45vw;
+        height: 50vh;
+      }
+      .light {
+        position: absolute;
+        top: 22vh;
+        left: 6vw;
+        height: 18vw;
+      }
+      .bottom-text {
+        position: absolute;
+        top: 30vh;
+        width: 100%;
+        color: #edf6f6;
+        font-weight: bold;
+        font-size: 38px;
+        letter-spacing: 5px;
+        text-align: center;
+      }
+    }
+    .right {
+      position: relative;
+      position: relative;
+      top: -4vh;
+      box-sizing: border-box;
+      width: 23vw;
+      padding: 1.8vw;
+      background: url('/images/form-bg.png') center no-repeat;
+      background-size: 100% 100%;
+      border-top-right-radius: 15px;
+      .qr-bg {
+        position: absolute;
+        top: 3px;
+        left: calc(100% - 5vw);
+        width: 5vw;
+        height: 4vw;
+        line-height: 4vw;
+        text-align: center;
+        background: url('/images/qr-bg.png') center no-repeat;
+        background-size: 100% 100%;
+        .qr-code {
+          position: relative;
+          top: -5px;
+          left: 20px;
+          left: 17px;
+          width: 20px;
+          cursor: pointer;
+          inline: inline;
+        }
+      }
+      .form-title {
+        margin-bottom: 2vw;
+        font-size: 22px;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+      .login-form {
+        .item {
+          display: flex;
+          align-items: center;
+          height: 40px;
+          margin-bottom: 1.8vw;
+          color: #333;
+          line-height: 40px;
+          background: rgba(255, 255, 255, 1);
+          border-radius: 8px;
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+          .my-input {
+            box-sizing: border-box;
+            width: calc(100% - 2.6vw);
+          }
+          .icon-span {
+            display: inline-block;
+            width: 2.6vw;
+            height: 100%;
+            text-align: center;
+          }
+          .icon-label {
+            width: 20px;
+            vertical-align: sub;
+          }
+        }
+        .verify-div {
+          display: flex;
+          .item {
+            width: 65%;
+            margin-right: 10px;
+          }
+          .verifyContainer {
+            width: calc(35% - 10px);
+            .verifyCanvas {
+              width: 100%;
+              height: 40px;
+              border-radius: 8px;
+              box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+            }
+          }
+        }
+        .remember {
+          margin-bottom: 1.2vw;
+          font-size: 14px;
+          text-align: right;
+          .checkbox {
+            margin-right: 10px;
+          }
+        }
+        .btn-p {
+          height: 55px;
+          color: #00f0ff;
+          font-size: 16px;
+          line-height: 55px;
+          letter-spacing: 3px;
+          text-align: center;
+          background: url('/images/login-btn.png') center no-repeat;
+          background-size: 100% 100%;
+          cursor: pointer;
+        }
+      }
+      .code-img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes lightmove {
+  0% {
+    left: 10vw;
+    width: 25vw;
+  }
+  50% {
+    left: 4vw;
+    width: 35vw;
+  }
+  100% {
+    left: 10vw;
+    width: 25vw;
+  }
+}
+.lightmove {
+  animation: lightmove 3s infinite;
+  animation-timing-function: linear;
+}
+.footer {
+  position: fixed;
+
+  bottom: 0;
+
+  width: 100%;
+  height: 40px;
+
+  color: #fff;
+
+  font-size: 12px;
+
+  font-family: Arial;
+
+  line-height: 40px;
+
+  letter-spacing: 1px;
+
+  text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .login-page .btn-p {
+    height: 45px;
+    line-height: 45px;
+  }
+  .login-page .remember {
+    margin-bottom: 1vw;
+  }
+  .login-page .item {
+    height: 35px;
+    line-height: 35px;
+  }
+}

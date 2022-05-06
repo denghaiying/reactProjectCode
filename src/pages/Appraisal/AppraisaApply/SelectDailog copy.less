@@ -1,0 +1,71 @@
+
+.dagl023-file-list-dialog{
+  width: 600px;
+  /deep/ .next-dialog-body{
+    padding: 0;
+  }
+  /deep/ .next-dialog-close{
+    display: none;
+  }
+  .head{
+    border-bottom: 1px solid #E9ECEF;
+    padding: 0 25px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title{
+      font-weight: bold;
+      font-size: 16px;
+      color: #333;
+      img{
+        width: 24px;
+        vertical-align: bottom;
+      }
+    }
+  }
+  .body{
+    padding: 0 10px;
+    .c-title{
+      font-size: 16px;
+      color: #5584FF;
+      line-height: 60px;
+    }
+    .radiogrp{
+      display: block;
+      .choose-list{
+        border: 1px solid #E5E5E5;
+        border-radius: 2px;
+        height: 160px;
+        overflow-y: auto;
+        font-size: 13px;
+        color: #999999;
+        margin-bottom: 20px;
+        .item{
+          list-style: none;
+          line-height: 35px;
+          padding: 0 15px;
+          border-bottom: 1px solid #EEEEEE;
+          &:nth-last-child(1) {
+            border-bottom: 0;
+          }
+        }
+      }
+      .check-input{
+        margin-bottom: 10px;
+      }
+    }
+    .desc{
+      font-size: 13px;
+      color: #999;
+      opacity: .6;
+    }
+    .btns{
+      margin: 30px 0;
+      text-align: right;
+    }
+    /deep/ .next-input{
+      border-color: #E5E5E5;
+    }
+  }
+}

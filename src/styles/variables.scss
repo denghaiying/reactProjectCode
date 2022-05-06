@@ -1,0 +1,14 @@
+@import "~@alifd/next/variables.scss";
+
+$work-page-height: calc(100vh - 58px - 40px);
+$work-contain-heigth: calc(100vh - 58px - 90px);
+$work-workspace-heigth: calc(100vh - 58px - 90px - 40px);
+$work-context-heigth: calc(100vh - 58px - 90px - 40px - 30px);
+$workTableHeigth: calc(100vh - 58px - 90px - 40px - 32px);
+$work-context-heigth-nofoot: calc(100vh - 58px - 90px - 42px);
+
+:export {
+  workTableHeigth: $work-context-heigth;
+  workspaceHeigth: $work-workspace-heigth;
+	/* ... */
+}

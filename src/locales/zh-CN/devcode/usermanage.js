@@ -1,0 +1,17 @@
+export default {
+  'e9.devcode.usermanage.title': '用户管理',
+  'e9.devcode.usermanage.userType': '用户类型',
+  'e9.devcode.usermanage.index': '序号',
+  'e9.devcode.usermanage.sysUser': '系统用户',
+  'e9.devcode.usermanage.selectSys': '选择系统用户',
+  'e9.devcode.usermanage.publcUser': '普通用户',
+  'e9.devcode.usermanage.userName': '登录名',
+  'e9.devcode.usermanage.userPassword': '用户密码',
+  'e9.devcode.usermanage.name': '用户名',
+  'e9.devcode.usermanage.email': 'email邮箱',
+  'e9.devcode.usermanage.userIdentity': '用户身份',
+  'e9.devcode.usermanage.maintainer': '项目维护人',
+  'e9.devcode.usermanage.member': '项目成员',
+  'e9.devcode.usermanage.strInfo': '登录名不能为中文',
+  'e9.devcode.usermanage.emailInfo': '请输入正确的邮箱',
+};

@@ -1,0 +1,18 @@
+export default {
+  'e9.keytask.scheassess.title': 'Assessment of progress',
+  'e9.keytask.scheassess.scheassessKhksrq': 'Assessment commencement date',
+  'e9.keytask.scheassess.scheassessKhjsrq': 'Assessment completion date',
+  'e9.keytask.scheassess.scheassessJhwce': 'Planned completion',
+  'e9.keytask.scheassess.scheassessSjwce': 'Actual completed amount',
+  'e9.keytask.scheassess.scheassessStatus': 'status',
+  'e9.keytask.scheassess.scheassessTjsj': 'Report the time',
+  'e9.keytask.scheassess.scheassessReason': 'cause',
+  'e9.keytask.scheassess.scheassessWay': 'solution',
+  'e9.keytask.scheassess.ipaName': 'Report to people ',
+  'e9.keytask.scheassess.ipaUnit': 'Report to the unit',
+  'e9.keytask.scheassess.roleId': 'role',
+  'e9.keytask.scheassess.projectId': 'project',
+  'e9.keytask.scheassess.dateWarning': 'The end date must not be earlier than the start date',
+  'e9.keytask.scheassess.finish': 'accomplish',
+  'e9.keytask.scheassess.unfinished': 'unfinished',
+};

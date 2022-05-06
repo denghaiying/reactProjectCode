@@ -1,0 +1,89 @@
+@import '../../../../styles/mixin.less';
+
+.all-tab{
+  .item{
+    border-bottom: 1px dashed #E5E5E5;
+    padding: 10px 0;
+    .title{
+      display: flex;
+      align-items: flex-end;
+     // cursor: pointer;
+      font-size: 16px;
+      color: #213fbd;
+      &:hover{
+        .title-a{
+          color: #213fbd;
+        }
+      }
+      .label{
+        font-size: 14px;
+        background-color: #148577;
+        border-radius: 2px;
+        margin-right: 10px;
+        padding: 0px 8px;
+        color: #fff;
+        line-height: 21px;
+      }
+      .title-a{
+        font-size: 16px;
+        color: #3B58D2;
+        text-decoration: underline;
+        .red{
+          color: #FF6860;
+        }
+      }
+    }
+    .article{
+      color: #666;
+      line-height: 20px;
+      margin: 10px 0;
+    }
+    .file-place{
+      margin-bottom: 5px;
+      .flexLeft;
+      .pdf_icon{
+        width: 36px;
+        height: 36px;
+        margin-right: 8px;
+      }
+      .pdf_right{
+        font-size: 14px;
+        .title-a{
+          color: #3B58D2;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        .summary{
+          color: #666666;
+        }
+      }
+    }
+    .bottom{
+      .flexBetween;
+      .left{
+        color: #999;
+        .value{
+          color: #148577;
+          margin-right: 30px;
+        }
+      }
+      .bottom-right{
+        color: #3F8EFF;
+        .icon-part{
+          border-right: 1px solid #E5E5E5;
+          padding: 0 20px;
+          cursor: pointer;
+          &:nth-last-child(1) {
+            border: 0;
+          }
+          .iconfont{
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+  .paginate{
+    margin-top: 30px;
+  }
+}

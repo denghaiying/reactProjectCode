@@ -1,0 +1,23 @@
+export default {
+  'e9.sys.menu.title': '菜单',
+  'e9.sys.menu.tree.title': '菜单',
+  'e9.sys.menu.table.title': '功能',
+  'e9.sys.menu.table.moduleName': '模块名',
+  'e9.sys.menu.table.FuncName': '功能名',
+  'e9.sys.menu.con.sysName': '系统',
+  'e9.sys.menu.con.modName': '模块',
+
+  'e9.sys.menu.menuName': '中文名称',
+  'e9.sys.menu.menuEname': '英文名称',
+  'e9.sys.menu.menuIndex': '排序',
+  'e9.sys.menu.titlegl': '菜单管理',
+  'e9.sys.menu.editMenu': '编辑菜单',
+  'e9.sys.menu.addMenu': '插入菜单',
+  'e9.sys.menu.addChildrenMenu': '插入子菜单',
+  'e9.sys.menu.deleteMenu': '删除菜单',
+  'e9.sys.menu.rollBack': '操作回滚',
+  'e9.sys.menu.nosaveinfo': '数据未保存，继续将丢失数据',
+  'e9.sys.menu.qxbj': '请先编辑',
+  'e9.sys.menu.menutree': '菜单列表',
+  'e9.sys.menu.charu': '插入',
+};

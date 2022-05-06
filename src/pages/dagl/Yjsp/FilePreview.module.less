@@ -1,0 +1,80 @@
+.main{
+  height: calc(100vh - 178px);
+  width: calc(100vw - 300px);
+  .msgLoading{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #adcfea;
+  }
+  .toolBar{
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px #ececec;
+    border: solid #e5e5e5 1px;
+    padding: 10px 10px 0 10px;
+  }
+  .fileList{
+    overflow: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+    width: 250px;
+    height: calc(100vh - 238px);
+  }
+  .fileContent{
+    overflow: auto;
+    background-color: #f1f1f1;
+    margin-top: 10px;
+    float: right;
+    width: calc(100vw - 560px);
+    height: calc(100vh - 238px);
+    display:flex;
+    justify-content:center;
+    .innerBox{
+      margin-top: 10px;
+      width: max-content;
+      max-width: 100%;
+    }
+    .errorPage{
+      font-size: 26px;
+      text-align: center;
+      line-height: calc(100vh - 240px);;
+      width: 600px;
+    }
+  }
+}
+
+/*滚动条整体样式*/
+.fileContent::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+/*滚动条滑块*/
+.fileContent::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(202, 200, 200, 0.2);
+  background: #979797;
+}
+/*滚动条轨道*/
+.fileContent::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+  border-radius: 10px;
+  background: #ececec;
+}
+
+/*滚动条整体样式*/
+.fileList::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/*滚动条滑块*/
+.fileList::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(202, 200, 200, 0.2);
+  background: #979797;
+}
+/*滚动条轨道*/
+.fileList::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+  border-radius: 10px;
+  background: #ececec;
+}

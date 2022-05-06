@@ -1,0 +1,32 @@
+export default {
+  'eps.areceive.title': 'received in advance',
+  'eps.areceive.unitp': 'unit project',
+  'eps.areceive.freceiv': 'file receive',
+  'eps.areceive.essential': 'essential',
+  'eps.areceive.pname': 'project name',
+  'eps.areceive.plocation': 'project location',
+  'eps.areceive.constructionu': 'construction unit',
+  'eps.areceive.designu': 'design unit',
+  'eps.areceive.approvalu': 'approval unit',
+  'eps.areceive.controlu': 'control unit',
+  'eps.areceive.investigau': 'investiga unit',
+  'eps.areceive.permitn': 'permission',
+  'eps.areceive.finish': 'finish',
+
+
+  'eps.areceive.sgdw': 'construction',
+  'eps.areceive.jzmj': 'covered area',
+  'eps.areceive.gd': 'height',
+  'eps.areceive.csds': 'plies(overground)',
+  'eps.areceive.csdx': 'plies(underground)',
+  'eps.areceive.jglx': 'structure type',
+  'eps.areceive.kgsj': 'start time',
+  'eps.areceive.jgsj': 'end time',
+  'eps.areceive.zyjz': 'professional record',
+  'eps.areceive.zydmj': 'total area of used land',
+  'eps.areceive.zjzmj': 'overall floorage ',
+  'eps.areceive.ds': 'house number',
+  'eps.areceive.gczj': 'project cost',
+  'eps.areceive.gcjs': 'project settlement',
+
+};

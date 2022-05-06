@@ -1,0 +1,135 @@
+.main-page-Menu {
+  position: relative;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  padding: 3vh 0;
+  color: #fff;
+  background-image: -webkit-radial-gradient(
+    ellipse farthest-corner at center center,
+    #1b44e4 0%,
+    #020f3a 100%
+  );
+  background-image: radial-gradient(
+    ellipse farthest-corner at center center,
+    #1b44e4 0%,
+    #020f3a 100%
+  );
+  .main-cover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    //  background: url('../../styles/img/mpmd/main-cover.jpg') center no-repeat;
+    background-size: 100% 100%;
+  }
+  .bg-canvas {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    //  ##z-index: 9;
+    .canvas {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+  .inner-content {
+    position: relative;
+    height: 100%;
+    .left-border {
+      position: absolute;
+      //  ##z-index: 10;
+      left: 4vw;
+      width: 20%;
+      height: 100%;
+      background: url('../../styles/img/mpmd/border-left.png') center no-repeat;
+      background-size: 100% 100%;
+    }
+    .right-border {
+      position: absolute;
+      //  ##z-index: 10;
+      left: calc(80% - 4vw);
+      width: 20%;
+      height: 100%;
+      background: url('../../styles/img/mpmd/border-right.png') center no-repeat;
+      background-size: 100% 100%;
+    }
+    .exit {
+      position: absolute;
+      //  ##z-index: 999;
+      left: calc(100% - 70px);
+      cursor: pointer;
+      transition: all ease 1s;
+      .exit-text {
+        color: #00f5ff;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+    .exit:hover {
+      transform: scale(1.1);
+    }
+    .top {
+      position: absolute;
+      top: 1vw;
+      width: 100%;
+      font-weight: bold;
+      font-size: 34px;
+      .title {
+        position: relative;
+        width: 850px;
+        height: 70px;
+        margin: 0 auto;
+        line-height: 70px;
+        letter-spacing: 3px;
+        text-align: center;
+        background: url('../../styles/img/mpmd/title-bg.png') center no-repeat;
+        background-size: 100% 100%;
+        //  ##z-index: 10;
+      }
+    }
+    .item-group {
+      box-sizing: border-box;
+      height: calc(100% - 70px);
+      padding: 5% 15%;
+      padding-bottom: 5%;
+      font-size: 0;
+      .item {
+        display: inline-block;
+        width: 16.6%;
+        margin-bottom: 5vh;
+        text-align: center;
+        cursor: pointer;
+        transition: all ease 1s;
+        .my-img {
+          display: block;
+          width: 100px;
+          margin: 0 auto;
+          margin-bottom: 10px;
+        }
+        .item-name {
+          color: #fff;
+          font-size: 16px;
+          /* -webkit-text-stroke:2px #1153B3; */
+        }
+      }
+      .item:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    top: calc(100% - 40px);
+    width: 100%;
+    height: 40px;
+    color: #00f5ff;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    opacity: 0.5;
+    //  ##z-index: 10;
+  }
+}

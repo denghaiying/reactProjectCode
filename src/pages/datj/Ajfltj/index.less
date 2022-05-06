@@ -1,0 +1,100 @@
+@import '../../../styles/mixin.less';
+.hall-regist-crktj {
+  height: 100%;
+  overflow-y: auto;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  .next-input {
+    input {
+      height: 32px;
+      line-height: 32px;
+    }
+  }
+  .control {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    .label {
+      margin: 0 10px;
+    }
+    .input {
+      width: 10vw;
+      margin-right: 30px;
+    }
+    .select {
+      width: 10vw;
+      margin-right: 30px;
+    }
+    .select-1 {
+      width: 10vw;
+      margin-right: 10px;
+    }
+    .btn {
+      width: 80px;
+      margin-left: 20px;
+    }
+  }
+  .main-content {
+    padding: 20px;
+    .btns-control {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      .custome-btn {
+        width: 80px;
+        height: 30px;
+        margin-right: 15px;
+        color: @primary-color;
+        border: 1px solid #79b0ff;
+        border-radius: 4px;
+        cursor: pointer;
+        .flexCenter;
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+    .common-table {
+      border-top: 0;
+      border-left: 1px solid #f0f0f0;
+      td {
+        padding: 10px;
+        color: #666;
+        font-size: 12px;
+        border: 0;
+        border-right: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+        .next-table-cell-wrapper {
+          padding: 0;
+          line-height: 1.7;
+        }
+      }
+      th {
+        padding: 10px;
+        color: #333;
+        font-size: 12px;
+        background-color: #edeeee;
+        border: 0;
+        .next-table-cell-wrapper {
+          padding: 0;
+          line-height: 1.7;
+        }
+      }
+    }
+    .paginate {
+      line-height: 60px;
+      text-align: right;
+    }
+  }
+  .hjrow {
+    background-color: rgb(138, 163, 247);
+    > td.ant-table-cell-row-hover {
+      background-color: rgb(64, 107, 250);
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@import '../../../../styles/mixin.less';
+.archive-manage{
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid #E5E5E5;
+  .top-section{
+    border-bottom: 1px solid #E5E5E5;
+    line-height: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    .flexBetween;
+    padding: 0 20px;
+    .title{
+      font-size: 14px;
+      color: #333;
+      font-weight: bold;
+    }
+    .next-input-group-text{
+      padding: 0 20px;
+      cursor: pointer;
+    }
+  }
+  .main-content{
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+    height: calc(100% - 50px);
+    .left-tree{
+      width: 250px;
+      height: 100%;
+      background-color: #fff;
+      padding: 20px 10px;
+      box-sizing: border-box;
+      position: absolute;
+      transform: translateX(-250px);
+      transition: transform .3s ease;
+      border-right: 1px solid #E5E5E5;
+    }
+    .file-content{
+      box-sizing: border-box;
+      padding: 10px;
+      width: calc(100% - 20px);
+      position: relative;
+      left: 20px;
+      transition: all .3s ease;
+      .my-table{
+        height: calc(100% - 70px);
+        border-top: 0;
+        border-left: 1px solid #f0f0f0;
+        td{
+          padding: 9px;
+          color: #666;
+          font-size: 12px;
+          border-right: 1px solid #f0f0f0;
+          border-bottom: 1px solid #f0f0f0;
+          text-align: center;
+          .next-table-cell-wrapper{
+            line-height: 1.7;
+            padding: 0;
+          }
+        }
+        th{
+          padding: 9px;
+          background-color:#EDEEEE;
+          color: #333;
+          font-size: 12px;
+          border: 0;
+          text-align: center;
+          .next-table-cell-wrapper{
+            line-height: 1.7;
+            padding: 0;
+          }
+        }
+        table{
+          height: 100%;
+        }
+      }
+      .paginate{
+        text-align: right;
+        line-height: 70px;
+      }
+    }
+  }
+  .isExpand{
+    .left-tree{
+      transform: translateX(0);
+    }
+    .file-content{
+      width: calc(100% - 250px);
+      left: 250px;
+    }
+    .collapse-icon{
+      right: 0 !important;
+    }
+    .left-arrow{
+      display: inline !important;
+    }
+  }
+}

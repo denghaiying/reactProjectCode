@@ -1,0 +1,26 @@
+export default {
+  'e9.spmgn.docman.title': '文档管理',
+  'e9.spmgn.docman.docmanCode': '文档编号',
+  'e9.spmgn.docman.docmanName': '文档名称',
+  'e9.spmgn.docman.docmanType': '文档类型',
+  'e9.spmgn.docman.tbs': '投标书',
+  'e9.spmgn.docman.xqfx': '需求分析',
+  'e9.spmgn.docman.gysj': '概要设计',
+  'e9.spmgn.docman.xxsj': '详细设计',
+  'e9.spmgn.docman.sjksj': '数据库设计',
+  'e9.spmgn.docman.csbg': '测试报告',
+  'e9.spmgn.docman.yhsc': '用户手册',
+  'e9.spmgn.docman.xqbg': '需求变更',
+  'e9.spmgn.docman.docmanVersions': '文档版本',
+  'e9.spmgn.docman.pmgndirId': '所属系统',
+  
+  'e9.spmgn.docman.download': '下载',
+  'e9.spmgn.docman.deleteall': '批量删除',
+  'e9.spmgn.docman.nosystem': '请选择所属系统',
+  'e9.spmgn.docman.selectdata': '请至少选择一条数据',
+
+  'e9.spmgn.docman.docmanFile': '上传文件',
+  'e9.spmgn.docman.docmanScyh': '文档著作人',
+  'e9.spmgn.docman.docmanScsj': '著作时间',
+  'e9.spmgn.docman.docmanIntro': '文档描述',
+};

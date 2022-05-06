@@ -1,0 +1,15 @@
+export default {
+  'e9.spmgn.funcma.title': '需求管理',
+  'e9.spmgn.funcma.funcmaCode': '需求编码',
+  'e9.spmgn.funcma.funcmaName': '需求名称',
+  'e9.spmgn.funcma.funcmaVersions': '当前版本',
+  'e9.spmgn.funcma.funcmaFid': '上级需求',
+  'e9.spmgn.funcma.funcmaIntro': '需求描述',
+  'e9.spmgn.funcma.pmgndirId': '所属项目',
+  'e9.spmgn.funcma.deleteBatch': '批量删除',
+  'e9.spmgn.funcma.warningOne': '请至少选择一条数据',
+  'e9.spmgn.funcma.warningTwo': '请先删除其子节点',
+  'e9.spmgn.funcma.warningThr': '不可以选择自己作为上级需求',
+  'e9.spmgn.funcma.historyVersions': '历史版本',
+  'e9.spmgn.funcma.detail': '需求详细',
+};

@@ -1,0 +1,17 @@
+export default {
+  'e9.meeting.notice.xm': ' Meeting Notice',
+  'e9.meeting.notice.code': 'Notification code',
+  'e9.meeting.notice.name': 'Conference room name',
+  'e9.meeting.notice.type': 'types of meeting ',
+  'e9.meeting.notice.planbegin': 'Planned start time',
+  'e9.meeting.notice.planend': 'Planned end time',
+  'e9.meeting.notice.compere': 'compere',
+  'e9.meeting.notice.summary ': 'summary',
+  'e9.meeting.notice.people': 'participant',
+  'e9.meeting.notice.agenda': 'conference agenda',
+  'e9.meeting.notice.theme': 'conference theme ',
+  'e9.meeting.notice.sc': 'autogeneration',
+  'e9.meeting.mtype.whr': 'accendant ',
+  'e9.meeting.mtype.whsj': 'maintenance time',
+  'e9.meeting.notice.warning': 'The planned start time shall not be less than the planned end time!',
+};

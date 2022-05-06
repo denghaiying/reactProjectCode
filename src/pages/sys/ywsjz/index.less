@@ -1,0 +1,99 @@
+@import '../../../styles/mixin.less';
+.archive-manage {
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  .top-section {
+    box-sizing: border-box;
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    border-bottom: 1px solid #e5e5e5;
+    .flexBetween;
+    .title {
+      color: #333;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .next-input-group-text {
+      padding: 0 20px;
+      cursor: pointer;
+    }
+  }
+  .main-content {
+    position: relative;
+    display: flex;
+    height: calc(100% - 50px);
+    overflow-x: hidden;
+    .left-tree {
+      position: absolute;
+      box-sizing: border-box;
+      width: 250px;
+      height: 100%;
+      padding: 20px 10px;
+      background-color: #fff;
+      border-right: 1px solid #e5e5e5;
+      transform: translateX(-250px);
+      transition: transform 0.3s ease;
+    }
+    .file-content {
+      position: relative;
+      left: 20px;
+      box-sizing: border-box;
+      width: calc(100% - 20px);
+      padding: 10px;
+      transition: all 0.3s ease;
+      .my-table {
+        height: calc(100% - 70px);
+        border-top: 0;
+        border-left: 1px solid #f0f0f0;
+        td {
+          padding: 9px;
+          color: #666;
+          font-size: 12px;
+          text-align: center;
+          border-right: 1px solid #f0f0f0;
+          border-bottom: 1px solid #f0f0f0;
+          .next-table-cell-wrapper {
+            padding: 0;
+            line-height: 1.7;
+          }
+        }
+        th {
+          padding: 9px;
+          color: #333;
+          font-size: 12px;
+          text-align: center;
+          background-color: #edeeee;
+          border: 0;
+          .next-table-cell-wrapper {
+            padding: 0;
+            line-height: 1.7;
+          }
+        }
+        table {
+          height: 100%;
+        }
+      }
+      .paginate {
+        line-height: 70px;
+        text-align: right;
+      }
+    }
+  }
+  .isExpand {
+    .left-tree {
+      transform: translateX(0);
+    }
+    .file-content {
+      left: 250px;
+      width: calc(100% - 250px);
+    }
+    .collapse-icon {
+      right: 0 !important;
+    }
+    .left-arrow {
+      display: inline !important;
+    }
+  }
+}

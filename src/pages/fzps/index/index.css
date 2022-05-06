@@ -1,0 +1,95 @@
+.online-review {
+  width: 100%;
+  min-height: 100%;
+  padding: 25px 24px;
+  background: #FFFFFF;
+}
+.online-review .title {
+  font-size: 16px;
+  color: #333333;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.online-review .review-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  height: 442px;
+  background: url('assets/img/bg-1.png') no-repeat;
+  background-size: cover;
+}
+.online-review .review-body .common-tab {
+  position: relative;
+  width: 20%;
+  text-align: center;
+}
+.online-review .review-body .common-tab::after {
+  content: '';
+  position: absolute;
+  width: calc(100% - 140px);
+  height: 2px;
+  background: #E5EBFE;
+  border-radius: 1px;
+  top: 52px;
+  right: calc((140px - 100%) / 2);
+}
+.online-review .review-body .common-tab:last-child::after {
+  display: none;
+}
+.online-review .review-body .common-tab .name {
+  position: absolute;
+  top: -78px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  width: 120px;
+  height: 48px;
+  background: #7ECEF4;
+  border: 1px solid #00A0E9;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 48px;
+  font-size: 16px;
+}
+.online-review .review-body .common-tab .name span {
+  color: #F34949;
+}
+.online-review .review-body .common-tab .name-b {
+  position: absolute;
+  bottom: -88px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  width: 120px;
+  height: 48px;
+  background: #7ECEF4;
+  border: 1px solid #00A0E9;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 48px;
+  font-size: 16px;
+}
+.online-review .review-body .common-tab .name-b span {
+  color: #F34949;
+}
+.online-review .review-body .common-tab .imgs img {
+  cursor: pointer;
+}
+.online-review .review-body .common-tab .num {
+  position: absolute;
+  bottom: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 27px;
+  color: #FBB224;
+}
+.online-review .review-body .common-tab .num-t {
+  position: absolute;
+  top: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 27px;
+  color: #FBB224;
+}

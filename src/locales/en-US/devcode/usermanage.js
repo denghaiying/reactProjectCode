@@ -1,0 +1,15 @@
+export default {
+  'e9.devcode.usermanage.title': 'User Management',
+  'e9.devcode.usermanage.userType': 'Customer Type',
+  'e9.devcode.usermanage.index': 'No',
+  'e9.devcode.usermanage.sysUser': 'System Users',
+  'e9.devcode.usermanage.selectSys': 'Select System Users',
+  'e9.devcode.usermanage.publcUser': 'Ordinary Users',
+  'e9.devcode.usermanage.userName': 'Login Name',
+  'e9.devcode.usermanage.userPassword': 'User Password',
+  'e9.devcode.usermanage.name': 'User Name',
+  'e9.devcode.usermanage.email': 'Email',
+  'e9.devcode.usermanage.userIdentity': 'User identity',
+  'e9.devcode.usermanage.maintainer': 'Project maintainer',
+  'e9.devcode.usermanage.member': 'Project members',
+};

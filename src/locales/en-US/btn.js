@@ -1,0 +1,26 @@
+export default {
+  'e9.btn.edit': 'Edit',
+  'e9.btn.delete': 'Delete',
+  'e9.btn.detail': 'Detail',
+  'e9.btn.add': 'Add',
+  'e9.btn.search': 'Search',
+  'e9.btn.advsearch': 'Advanced Search',
+  'e9.btn.view': 'View',
+  'e9.btn.save': 'Save',
+  'e9.btn.cancel': 'Cancel',
+  'e9.btn.return': 'Return',
+  'e9.btn.reportset': 'Report',
+  'e9.btn.print': 'Print',
+  'e9.btn.preview': 'Preview',
+  'e9.btn.help': 'Help',
+  'e9.btn.file.export': 'File Export',
+  'e9.btn.file.import': 'File Import',
+
+  'e9.btn.affix': 'Affix',
+  'e9.btn.check': 'Check',
+  'e9.btn.pay': 'Pay',
+  'e9.btn.copy': 'Copy',
+  'e9.btn.upload': 'Upload',
+  'e9.btn.download': 'Download',
+
+};

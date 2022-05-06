@@ -1,0 +1,20 @@
+export default {
+  'e9.datamgn.element.title': '数据元管理',
+  'e9.datamgn.element.databaseId': '所属数据库',
+  'e9.datamgn.element.tableId': '数据表',
+  'e9.datamgn.element.elementCode': '数据元编号',
+  'e9.datamgn.element.elementCname': '中文名称',
+  'e9.datamgn.element.elementEname': '英文名称',
+  'e9.datamgn.element.elementType': '数据类型',
+  'e9.datamgn.element.elementExpression': '说明',
+  'e9.datamgn.element.elementUnit': '提交单位',
+  'e9.datamgn.element.elementBz': '备注',
+  'e9.datamgn.element.elementAddtime': '创建时间',
+  'e9.datamgn.element.elementLength': '数据长度',
+  'e9.datamgn.element.elementRange': '值域',
+
+  'e9.datamgn.element.elementInfo': '数据元信息',
+  'e9.datamgn.element.rangeCode': '代码',
+  'e9.datamgn.element.rangeName': '名称',
+  'e9.datamgn.element.rangeExpression': '说明',
+};

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+td.next-table-cell {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.multiple-text {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}

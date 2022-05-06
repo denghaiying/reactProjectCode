@@ -1,0 +1,47 @@
+@import '../../../../../styles/mixin.less';
+.drawer-page{
+  .ant-drawer-content{
+    background-color: unset;
+    .ant-drawer-body{
+      background-color: #fff;
+    }
+  }
+  .drawer{
+    padding: 0 5vw;
+    .ant-form-item-label{
+      margin-right: 1vw;
+    }
+    .row{
+      .flexBetween;
+      .form-item{
+        width: 45%;
+        display: flex;
+        .next-form-item-label{
+          font-size: 14px;
+          width: 100px;
+          text-align: right;
+          line-height: 32px;
+        }
+        .next-form-item-control{
+          width: calc(100% - 120px);
+          input{
+            height: 32px;
+            font-size: 14px;
+          }
+          .next-input{
+            height: 32px;
+          }
+          .next-select-single.next-no-search{
+            width: 100%;
+          }
+        }
+      }
+      .worker{
+        .flexBetween;
+      }
+    }
+    .btns{
+      text-align: center;
+    }
+  }
+}

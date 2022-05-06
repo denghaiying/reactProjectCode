@@ -1,0 +1,108 @@
+@import '../../../styles/mixin.less';
+.hall-regist-dacltj{
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  font-size: 14px;
+  overflow-y: auto;
+   .next-input{
+    input{
+      height: 32px;
+      line-height: 32px;
+    }
+  }
+  .control{
+    height: 115px;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    .label{
+      margin: 0 10px;
+    }
+    .input{
+      margin-right: 30px;
+      width: 10vw;
+    }
+    .select{
+      margin-right: 30px;
+      width: 10vw;
+    }
+    .select-1{
+      margin-right: 10px;
+      width: 10vw;
+    }
+    .btn{
+      margin-left: 20px;
+      width: 80px;
+    }
+    
+
+  }
+  .main-content{
+    padding: 20px;
+    .btns-control{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      .custome-btn{
+        width: 80px;
+        height: 30px;
+        .flexCenter;
+        border-radius: 4px;
+        border: 1px solid #79B0FF;
+        margin-right: 15px;
+        color: @primary-color;
+        cursor: pointer;
+        img{
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+    .common-table{
+      border-top: 0;
+      border-left: 1px solid #f0f0f0;
+      td{
+        padding: 10px;
+        color: #666;
+        font-size: 12px;
+        border-right: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+        border: 0;
+        .next-table-cell-wrapper{
+          line-height: 1.7;
+          padding: 0;
+        }
+      }
+      th{
+        padding: 10px;
+        background-color:#EDEEEE;
+        color: #333;
+        font-size: 12px;
+        border: 0;
+        .next-table-cell-wrapper{
+          line-height: 1.7;
+          padding: 0;
+        }
+      }
+    }
+    .paginate{
+      text-align: right;
+      line-height: 60px;
+    }
+  }
+  .xjrow{
+    background-color: rgb(242, 243, 154);
+    >td.ant-table-cell-row-hover{
+     background: rgb(242, 245, 80);
+    }
+ }
+  .hjrow{
+    background-color: rgb(138, 163, 247);
+    >td.ant-table-cell-row-hover{
+      background-color: rgb(64, 107, 250);
+     }
+  }
+}

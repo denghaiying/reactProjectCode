@@ -1,0 +1,20 @@
+export default {
+  'e9.promgn.paycheck.title': 'Payment registration',
+  'e9.promgn.paycheck.pay': 'Pay',
+  'e9.promgn.paycheck.basicinfo': 'Essential information',
+  'e9.promgn.paycheck.unitinfo': 'Payee information',
+  'e9.promgn.paycheck.paycheckCode': 'Payment number',
+  'e9.promgn.paycheck.paycheckFkje': 'Payment amount',
+  'e9.promgn.paycheck.payCode': 'Application No',
+  'e9.promgn.paycheck.paycheckFkrq': 'Date of payment',
+  'e9.promgn.paycheck.paycheckSkdw': 'Collection unit',
+  'e9.promgn.paycheck.paycheckBank': 'Receiving bank',
+  'e9.promgn.paycheck.paycheckAccount': 'Collection account',
+  'e9.promgn.paycheck.warning': 'The payment amount has been exceeded',
+  'e9.promgn.paycheck.payStatus': 'Pay Status',
+  'e9.promgn.paycheck.payStatus.placeholder': 'Please select payment status',
+  'e9.promgn.paycheck.all': 'All',
+  'e9.promgn.paycheck.obligation': 'obligation',
+  'e9.promgn.paycheck.end': 'End of the payment',
+
+};

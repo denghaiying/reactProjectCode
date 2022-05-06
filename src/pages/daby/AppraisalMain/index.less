@@ -1,0 +1,156 @@
+@import '../../../styles/mixin.less';
+.oa-manage{
+  height: 99%;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  position: relative;
+  .title{
+    height: 45px;
+    line-height: 45px;
+    padding: 0 35px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .content{
+    display: flex;
+    margin-bottom: 15px;
+    height: calc(100% - 45px);
+    // overflow-y: auto;
+    .tree{
+      width: 270px;
+      // overflow-y: auto;
+      padding: 15px 0;
+      height: 94%;
+      border-right: 1px solid #E5E5E5;
+      position: absolute;
+      transition: transform ease .3s;
+      .ant-tree-node-content-wrapper{
+        padding: 0;
+        white-space: nowrap;
+        .ant-tree-title{
+          .textOverflow;
+          display: inline-block;
+          width: 160px;
+        }
+      }
+      .collapse-icon{
+        width: 16px;
+        height: 35px;
+        background: #CFCFD7;
+        border-radius: 6px 0px 0px 6px;
+        text-align: center;
+        line-height: 35px;
+        position: absolute;
+        right: 0;
+        top: calc(50% - 16px);
+        transition: all .3s ease;
+        cursor: pointer;
+        .icon{
+          color: #fff;
+          padding: 10px 0;
+        }
+      }
+    }
+    .right{
+      position: relative;
+      left: 270px;
+      // width: calc(100% - 270px);
+      transition: all ease .3s;
+      .control{
+        height: 55px;
+        padding-right: 1vw;
+        .flexLeft;
+        .input-group{
+          height: 30px;
+          border: 1px solid #DCDCDC;
+          border-radius: 4px;
+          width: 15vw;
+          margin-right: 10px;
+          .flexBetween;
+          .btn-text{
+            width: 70px;
+            height: 100%;
+            font-size: 12px;
+            text-align: center;
+            line-height: 30px;
+            border-left: 1px solid #DCDCDC;
+            position: relative;
+            .hidden{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: 0;
+              opacity: 0;
+            }
+          }
+          .file-input{
+            width: calc(100% - 70px);
+            height: 100%;
+          }
+        }
+      }
+      .my-table {
+        height: calc(100% - 55px);
+        .ant-spin-nested-loading{
+          height: 100%;
+          .ant-spin-container{
+            height: 100%;
+            .ant-table{
+              height: calc(100% - 62px);
+              .ant-table-container{
+                height: 100%;
+                .ant-table-content{
+                  height: 100%;
+                  overflow: auto !important;
+                  .ant-table-body{
+                    height: calc(100% - 39px);
+                  }
+                }
+              }
+            }
+          }
+        }
+        // .ant-spin-nested-loading, .ant-spin-container, .ant-table-container, .ant-table-content, table{
+        //   height: 100%;
+        // }
+        // .ant-table{
+        //   height: calc(100% - 62px);
+        // }
+        .ant-table-expanded-row-fixed{
+          min-height: 570px;
+        }
+        .ant-empty{
+          margin-top: 100px;
+        }
+        .ant-table-thead > tr > th{
+          background: #EDEEEE;
+          font-weight: bold;
+        }
+        .ant-table-pagination.ant-pagination{
+          padding-right: 20px;
+        }
+        .ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td{
+          padding: 10px 16px;
+          color: #666;
+          font-size: 12px;
+        }
+        .ant-table-tbody > tr{
+          &:nth-child(2n) {
+            &>td{
+              background-color: rgba(238, 238, 238, .25);
+            }
+          }
+        }
+      }
+    }
+  }
+  .hideExpand{
+    .tree{
+      transform: translateX(-260px);
+    }
+    .right{
+      width: calc(100% - 5px);
+      transform: translateX(-260px);
+    }
+  }
+}

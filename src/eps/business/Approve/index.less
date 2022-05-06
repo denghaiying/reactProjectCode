@@ -1,0 +1,337 @@
+@import '../../../styles/base.less';
+.dak-manage {
+  position: relative;
+  height: 100%;
+  padding: 0 10px;
+  background-color: #fff;
+  .main-content {
+    position: relative;
+    top: 3px;
+    bottom: 3px;
+    display: flex;
+    height: calc(100% - 10px);
+    overflow-x: hidden;
+
+    .file-content {
+      position: relative;
+      left: 20px;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 3px 12px;
+      transition: all 0.3s ease;
+      .office-child {
+        position: relative;
+        height: calc(50% - 25px);
+        &:nth-last-child(1) {
+          // .menu-right{
+          // display: none;
+          // }
+          .menu-collapse {
+            //  ##z-index: 8;
+          }
+        }
+        .condition {
+          display: flex;
+          margin-bottom: 3px;
+          padding: 0 10px;
+          padding-right: 80px;
+          button {
+            font-size: 12px;
+          }
+          .pre_icon {
+            width: 22px;
+            margin-right: 5px;
+          }
+          .next-search {
+            width: 18vw;
+            .next-input-group {
+              box-sizing: border-box;
+              height: 25px;
+              .next-select {
+                height: 100%;
+              }
+              input {
+                height: 24px;
+                font-size: 12px;
+              }
+              .next-icon-search {
+                display: none;
+              }
+              .next-search-btn-text {
+                font-size: 12px;
+              }
+            }
+          }
+          .menu-right {
+            position: absolute;
+            top: 6px;
+            right: 0;
+            width: 70px;
+            height: 40px;
+            color: #666;
+            text-align: center;
+            background-color: #fff;
+            cursor: pointer;
+
+            .more {
+              margin-right: 5px;
+            }
+          }
+          .add-btn-tab {
+            width: calc(100% - 658px);
+            .next-tabs-content {
+              display: none;
+            }
+            .next-tabs-content:before {
+              border-bottom: 0;
+            }
+            .next-tabs-tab {
+              margin-right: 0;
+              background-color: #fff;
+              border: 0;
+            }
+            .next-tabs-tab:before {
+              display: none;
+            }
+            .next-tabs-bar:before {
+              display: none;
+            }
+            .next-tabs-tab-inner {
+              padding: 0;
+              cursor: default;
+            }
+          }
+          .add-btn {
+            display: inline-block;
+            margin-left: 10px;
+            padding: 2px 8px;
+            color: #3f8eff;
+            vertical-align: middle;
+            border: 1px solid #3f8eff;
+            border-radius: 4px;
+            img {
+              width: 18px;
+              height: 18px;
+              margin-right: 5px;
+              vertical-align: bottom;
+            }
+            .del-icon {
+              color: #ff5b52;
+              font-size: 12px;
+              vertical-align: text-bottom;
+              cursor: pointer;
+            }
+            .del-icon:before {
+              width: 14px;
+              margin-left: 3px;
+              font-size: 14px;
+            }
+          }
+        }
+        .common-table {
+          height: calc(100% - 65px);
+          border-top: 0;
+          border-left: 1px solid #f0f0f0;
+          .next-table-inner {
+            height: 100%;
+            .next-table-body {
+              position: relative;
+              height: calc(100% - 43px);
+              max-height: 100%;
+              font-size: 12px;
+            }
+          }
+        }
+
+        .menu-collapse {
+          position: absolute;
+          top: 42px;
+          //  ##z-index: 9;
+          box-sizing: border-box;
+          width: 100%;
+          height: 0;
+          padding: 20px 40px;
+          overflow-y: hidden;
+          background-color: #fff;
+          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+          opacity: 0;
+          transition: all ease 0.3s;
+          .group {
+            display: flex;
+            flex-wrap: wrap;
+            .item {
+              .flexCenter;
+              position: relative;
+              flex-direction: column;
+              width: 5.1vw;
+              height: 4vw;
+              margin-right: 11px;
+              margin-bottom: 10px;
+              color: #fff;
+              font-size: 12px;
+              border-radius: 2px;
+              &:hover {
+                .shadow {
+                  display: block;
+                }
+              }
+              // &:nth-child(6n+1){
+              //   background-color: #30B0D5;
+              // }
+              // &:nth-child(6n+2){
+              //   background-color: #CFA32A;
+              // }
+              // &:nth-child(6n+3){
+              //   background-color: #3F8EFF;
+              // }
+              // &:nth-child(6n+4){
+              //   background-color: #1DA291;
+              // }
+              // &:nth-child(6n+5){
+              //   background-color: #7A8EFC;
+              // }
+              // &:nth-child(6n+6){
+              //   background-color: #8DDE04;
+              // }
+              img {
+                margin-bottom: 10px;
+                //  ##z-index: 9;
+              }
+              span {
+                //  ##z-index: 9;
+              }
+              .shadow {
+                position: absolute;
+                display: none;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 2px;
+              }
+              .add-icon {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 22px;
+                height: 22px;
+                cursor: pointer;
+              }
+            }
+          }
+          .btns {
+            margin-top: 30px;
+            text-align: center;
+            .next-btn {
+              padding: 0 20px;
+            }
+          }
+        }
+        .table-container {
+          position: relative;
+          height: calc(100% - 30px);
+        }
+      }
+      .show-menus {
+        .cover {
+          position: absolute;
+          top: 35px;
+          right: 0;
+          width: 70px;
+          height: 10px;
+          background-color: #fff;
+          //  ##z-index: 11;
+        }
+        .menu-collapse {
+          height: 530px;
+          opacity: 1;
+        }
+        .menu-right {
+          color: #3f8eff !important;
+          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  float: right;
+  padding: 5px;
+}
+
+// .ant-input {
+//   height: 25px;
+// }
+
+.next-btn.next-medium {
+  height: 32px;
+  padding: 0 12px;
+  font-size: 12px;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.table-container {
+  position: relative;
+  height: calc(100% - 30px);
+}
+
+.common-table {
+  height: calc(100% - 65px);
+  border-top: 0;
+  border-left: 1px solid #f0f0f0;
+  .next-table-inner {
+    height: 100%;
+    .next-table-body {
+      position: relative;
+      height: calc(100% - 43px);
+      max-height: 100%;
+      font-size: 12px;
+    }
+  }
+}
+
+.detail-container {
+  height: 100%;
+  .ant-tabs {
+    height: 100%;
+    .ant-tabs-top {
+      .ant-tabs-nav {
+        margin: 0 0 0 0;
+      }
+    }
+  }
+}
+
+.detail-container > .ant-tabs {
+  height: 100%;
+}
+.detail-container > .ant-tabs > .ant-tabs-top > .ant-tabs-nav {
+  margin: 0 0 0 0;
+}
+
+.ant-tabs-nav {
+  margin: 0 0 0 0;
+}
+
+.ant-tabs-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+// .ant-input-group .ant-input {
+//   float: left;
+//   width: 100%;
+//   height: 32px;
+//   margin-bottom: 0;
+//   text-align: inherit;
+// }
+
+.ant-input-search
+  > .ant-input-group
+  > .ant-input-group-addon:last-child
+  .ant-input-search-button:not(.ant-btn-primary) {
+  height: 28px;
+  color: rgba(0, 0, 0, 0.45);
+}

@@ -1,0 +1,21 @@
+export default {
+  'e9.ksh.bzmk.title': '模块维护',
+  'e9.ksh.bzmk.bzmkbh': '模块编号',
+  'e9.ksh.bzmk.bzmkmc': '模块标题',
+  'e9.ksh.bzmk.bzmkqtmc': '图表标题',
+  'e9.ksh.bzmk.bzmksize': '图表尺寸大小',
+  'e9.ksh.bzmk.bzmkwidth': '图表宽度',
+  'e9.ksh.bzmk.bzmkheight': '图表高度',
+  'e9.ksh.bzmk.bzmktype': '图表类型',
+  'e9.ksh.bzmk.bzmkmultiple': '系列',
+  'e9.ksh.bzmk.bzmkurl': 'URL',
+  'e9.ksh.bzmk.bzmkqzfs': '取值方式',
+  'e9.ksh.bzmk.bzmksql': 'SQL',
+  'e9.ksh.bzmk.bzmksqlz': '外层SQL',
+  'e9.ksh.bzmk.bzmkrefresh': '刷新时间',
+  'e9.ksh.bzmk.bzmkwidthsm': '宽度说明',
+  'e9.ksh.bzmk.bzmkheightsm': '高度说明',
+  'e9.ksh.bzmk.bzmksqlzsm': '外层SQL说明',
+  'e9.ksh.bzmk.bzmksqlsm': '设计SQL说明',
+
+};

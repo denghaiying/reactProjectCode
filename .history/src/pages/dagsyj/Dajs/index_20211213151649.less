@@ -1,0 +1,179 @@
+.chartsSecond-content {
+  width: 100%;
+  padding: 10px 23px 8px;
+  background-color: #f3f3f3;
+  .common-wrap {
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    .title {
+      font-size: 16px;
+      font-family: Source Han Sans CN;
+      font-weight: bold;
+      color: #333333;
+      padding: 6px 30px;
+      background: #ebecf0;
+    }
+    .common-content {
+      background-color: #fff;
+      padding: 10px 40px;
+    }
+  }
+  .tabs-list {
+    width: 100%;
+    .tabs-det {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .cards {
+    width: 110px;
+    height: 94px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 10px;
+    .num {
+      font-size: 30px;
+      font-family: Source Han Sans CN;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .name {
+      font-size: 14px;
+      font-family: Source Han Sans CN;
+      font-weight: 400;
+      color: #ffffff;
+    }
+  }
+  .cards-img {
+    background-image: url(./assets/images/jgdw-img.png);
+  }
+  .cards-img-1 {
+    background-image: url(./assets/images/aj-img.png);
+  }
+  .cards-img-2 {
+    background-image: url(./assets/images/j-img.png);
+  }
+  .cards-img-3 {
+    background-image: url(./assets/images/jn-img.png);
+  }
+  .table-area {
+    .table {
+      :global {
+        .ant-table-cell {
+          padding: 6px 16px;
+        }
+        .ant-table-tbody .ant-table-row:nth-child(2n) {
+          background-color: #eeeeee;
+        }
+      }
+    }
+    .common-content {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
+    .btns-area {
+      display: flex;
+      float: right;
+      padding-bottom: 10px;
+      .btns {
+        margin-left: 10px;
+        background-color: #5584ff;
+        border-radius: 4px;
+      }
+      .btns-type {
+        border-radius: 4px;
+        margin-left: 10px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.6);
+        background-color: #5584ff;
+      }
+      .btns-time {
+        border-radius: 4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        background-color: #5584ff;
+      }
+    }
+  }
+}
+.charts-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .common-wrap {
+    flex: 1;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .common-content {
+      padding-bottom: 0;
+      padding-top: 6px;
+    }
+  }
+  .common-charts {
+    width: 100%;
+    height: 240px;
+  }
+}
+.opts-area {
+  width: 100%;
+  display: flex;
+  .common {
+    width: 80px;
+    position: relative;
+    cursor: pointer;
+    padding-left: 26px;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #5584ff;
+  }
+  .guidang::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 19px;
+    height: 19px;
+    background-image: url(./assets/images/guidang-img.png);
+    background-size: cover;
+  }
+  .fenxiang::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 19px;
+    height: 19px;
+    background-image: url(./assets/images/fenxiang-img.png);
+    background-size: cover;
+  }
+  .shangchu::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 19px;
+    height: 19px;
+    background-image: url(./assets/images/shangchu-img.png);
+    background-size: cover;
+  }
+  .chakan::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 19px;
+    height: 19px;
+    background-image: url(./assets/images/chakan-img.png);
+    background-size: cover;
+  }
+}

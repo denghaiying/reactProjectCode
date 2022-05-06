@@ -1,0 +1,18 @@
+export default {
+  'e9.keytask.scheassess.title': '进度考核',
+  'e9.keytask.scheassess.scheassessKhksrq': '考核开始日期',
+  'e9.keytask.scheassess.scheassessKhjsrq': '考核结束日期',
+  'e9.keytask.scheassess.scheassessJhwce': '计划完成额',
+  'e9.keytask.scheassess.scheassessSjwce': '实际完成额',
+  'e9.keytask.scheassess.scheassessStatus': '状态',
+  'e9.keytask.scheassess.scheassessTjsj': '上报时间',
+  'e9.keytask.scheassess.scheassessReason': '原因',
+  'e9.keytask.scheassess.scheassessWay': '解决办法',
+  'e9.keytask.scheassess.ipaUnit': '上报单位',
+  'e9.keytask.scheassess.ipaName': '上报人',
+  'e9.keytask.scheassess.roleId': '角色',
+  'e9.keytask.scheassess.projectId': '项目',
+  'e9.keytask.scheassess.dateWarning': '结束日期不得早于开始日期',
+  'e9.keytask.scheassess.finish': '完成',
+  'e9.keytask.scheassess.unfinished': '未完成',
+};

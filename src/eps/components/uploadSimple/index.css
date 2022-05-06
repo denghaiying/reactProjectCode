@@ -1,0 +1,206 @@
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.textOverflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.next-btn.next-btn-primary {
+  background-color: #3f8eff !important;
+}
+.next-btn.next-btn-primary:focus,
+.next-btn.next-btn-primary:hover,
+.next-btn.next-btn-primary.hover {
+  background-color: #2a7ef5 !important;
+}
+.next-pagination .next-pagination-item.next-current {
+  background-color: #2a7ef5 !important;
+  border-color: #2a7ef5 !important;
+}
+.next-tabs-pure > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab.active {
+  color: #3f8eff !important;
+}
+.next-tabs-pure > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab:before {
+  border-bottom: 2px solid #3f8eff !important;
+}
+::-webkit-scrollbar {
+  /*滚动条整体部分，其中的属性有width,height,background,border等*/
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  /*外层轨道，可以用display:none让其不显示，也可以添加背景图片*/
+  background: rgba(204, 204, 204, 0.48);
+  border-radius: 2px;
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  /*滚动条里面可以拖动的那部分*/
+  background: rgba(204, 204, 204, 0.6);
+  border-radius: 4px;
+}
+.detail-oa {
+  color: #333;
+}
+.detail-oa .ant-drawer-content-wrapper {
+  padding: 0;
+  height: 100% !important;
+}
+.detail-oa .ant-drawer-content-wrapper .ant-drawer-body {
+  padding: 0;
+  padding-bottom: 20px;
+}
+.detail-oa .title {
+  font-size: 16px;
+  font-weight: bold;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 20px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.detail-oa .detail-content {
+  padding: 0 1vw;
+}
+.detail-oa .detail-content .sec-title {
+  padding: 20px 0 7px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #E5E5E5;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.detail-oa .detail-content .sec-title .title-icon {
+  width: 4px;
+  height: 14px;
+  background-color: #3F8EFF;
+  margin-right: 8px;
+}
+.detail-oa .detail-content .sec-title .control-btns {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+.detail-oa .detail-content .form-content {
+  padding: 20px 10px;
+  padding-bottom: 0;
+}
+.detail-oa .detail-content .form-content .ant-form-item {
+  margin-bottom: 15px;
+}
+.detail-oa .detail-content .form-content .ant-form-item-label > label {
+  font-size: 12px;
+  color: #999999;
+}
+.detail-oa .detail-content .form-content .ant-input {
+  font-size: 12px;
+}
+.detail-oa .detail-content .form-content .ant-select {
+  font-size: 12px !important;
+}
+.detail-oa .detail-content .form-content .ant-select input {
+  height: 30px;
+}
+.detail-oa .detail-content .form-content .ant-select .ant-select-selection-placeholder {
+  line-height: 30px;
+}
+.detail-oa .detail-content .form-content .ant-input-number {
+  width: 100%;
+}
+.detail-oa .detail-content .form-content .ant-input-number .ant-input-number-handler-wrap {
+  opacity: 1;
+}
+.detail-oa .detail-content .form-content .ant-picker {
+  width: 100%;
+  padding: 5px 11px 5px;
+}
+.detail-oa .detail-content .form-content .ant-picker input {
+  font-size: 12px;
+}
+.detail-oa .detail-content .form-content .line {
+  height: 1px;
+  border-bottom: 2px dashed #E5E5E5;
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.detail-oa .detail-content .accessory {
+  padding: 0 30px;
+}
+.detail-oa .detail-content .accessory .control {
+  height: 55px;
+  padding-right: 1vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.detail-oa .detail-content .accessory .control .input-group {
+  height: 30px;
+  border: 1px solid #DCDCDC;
+  border-radius: 4px;
+  width: 15vw;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail-oa .detail-content .accessory .control .input-group .btn-text {
+  width: 70px;
+  height: 100%;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+  border-left: 1px solid #DCDCDC;
+  position: relative;
+}
+.detail-oa .detail-content .accessory .control .input-group .btn-text .hidden {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+}
+.detail-oa .detail-content .accessory .control .input-group .file-input {
+  width: calc(100% - 60px);
+  height: 100%;
+}
+.detail-oa .detail-content .accessory .my-table .ant-table-thead > tr > th {
+  background: #EDEEEE;
+  font-weight: bold;
+}
+.detail-oa .detail-content .accessory .my-table .ant-table-pagination.ant-pagination {
+  padding-right: 20px;
+}
+.detail-oa .detail-content .accessory .my-table .ant-table-thead > tr > th,
+.detail-oa .detail-content .accessory .my-table .ant-table-tbody > tr > td,
+.detail-oa .detail-content .accessory .my-table .ant-table tfoot > tr > th,
+.detail-oa .detail-content .accessory .my-table .ant-table tfoot > tr > td {
+  padding: 10px 16px;
+  color: #666;
+  font-size: 12px;
+}
+.detail-oa .detail-content .accessory .my-table .ant-table-tbody > tr:nth-child(2n) > td {
+  background-color: rgba(238, 238, 238, 0.25);
+}
+.detail-oa .detail-content .accessory .my-table .ant-table-row-selected > td {
+  background: #e6f7ff !important;
+}

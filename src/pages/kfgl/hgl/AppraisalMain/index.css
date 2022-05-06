@@ -1,0 +1,208 @@
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.textOverflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.next-btn.next-btn-primary {
+  background-color: #3f8eff !important;
+}
+.next-btn.next-btn-primary:focus,
+.next-btn.next-btn-primary:hover,
+.next-btn.next-btn-primary.hover {
+  background-color: #2a7ef5 !important;
+}
+.next-pagination .next-pagination-item.next-current {
+  background-color: #2a7ef5 !important;
+  border-color: #2a7ef5 !important;
+}
+.next-tabs-pure > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab.active {
+  color: #3f8eff !important;
+}
+.next-tabs-pure > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab:before {
+  border-bottom: 2px solid #3f8eff !important;
+}
+::-webkit-scrollbar {
+  /*滚动条整体部分，其中的属性有width,height,background,border等*/
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  /*外层轨道，可以用display:none让其不显示，也可以添加背景图片*/
+  background: rgba(204, 204, 204, 0.48);
+  border-radius: 2px;
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  /*滚动条里面可以拖动的那部分*/
+  background: rgba(204, 204, 204, 0.6);
+  border-radius: 4px;
+}
+.oa-manage {
+  height: 99%;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  position: relative;
+}
+.oa-manage .title {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 35px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.oa-manage .content {
+  display: flex;
+  margin-bottom: 15px;
+  height: calc(100% - 45px);
+}
+.oa-manage .content .tree {
+  width: 270px;
+  padding: 15px 0;
+  height: 94%;
+  border-right: 1px solid #E5E5E5;
+  position: absolute;
+  transition: transform ease 0.3s;
+}
+.oa-manage .content .tree .ant-tree-node-content-wrapper {
+  padding: 0;
+  white-space: nowrap;
+}
+.oa-manage .content .tree .ant-tree-node-content-wrapper .ant-tree-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 160px;
+}
+.oa-manage .content .tree .collapse-icon {
+  width: 16px;
+  height: 35px;
+  background: #CFCFD7;
+  border-radius: 6px 0px 0px 6px;
+  text-align: center;
+  line-height: 35px;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 16px);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.oa-manage .content .tree .collapse-icon .icon {
+  color: #fff;
+  padding: 10px 0;
+}
+.oa-manage .content .right {
+  position: relative;
+  left: 270px;
+  transition: all ease 0.3s;
+}
+.oa-manage .content .right .control {
+  height: 55px;
+  padding-right: 1vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.oa-manage .content .right .control .input-group {
+  height: 30px;
+  border: 1px solid #DCDCDC;
+  border-radius: 4px;
+  width: 15vw;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.oa-manage .content .right .control .input-group .btn-text {
+  width: 70px;
+  height: 100%;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+  border-left: 1px solid #DCDCDC;
+  position: relative;
+}
+.oa-manage .content .right .control .input-group .btn-text .hidden {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+}
+.oa-manage .content .right .control .input-group .file-input {
+  width: calc(100% - 70px);
+  height: 100%;
+}
+.oa-manage .content .right .my-table {
+  height: calc(100% - 55px);
+}
+.oa-manage .content .right .my-table .ant-spin-nested-loading {
+  height: 100%;
+}
+.oa-manage .content .right .my-table .ant-spin-nested-loading .ant-spin-container {
+  height: 100%;
+}
+.oa-manage .content .right .my-table .ant-spin-nested-loading .ant-spin-container .ant-table {
+  height: calc(100% - 62px);
+}
+.oa-manage .content .right .my-table .ant-spin-nested-loading .ant-spin-container .ant-table .ant-table-container {
+  height: 100%;
+}
+.oa-manage .content .right .my-table .ant-spin-nested-loading .ant-spin-container .ant-table .ant-table-container .ant-table-content {
+  height: 100%;
+  overflow: auto !important;
+}
+.oa-manage .content .right .my-table .ant-spin-nested-loading .ant-spin-container .ant-table .ant-table-container .ant-table-content .ant-table-body {
+  height: calc(100% - 39px);
+}
+.oa-manage .content .right .my-table .ant-table-expanded-row-fixed {
+  min-height: 570px;
+}
+.oa-manage .content .right .my-table .ant-empty {
+  margin-top: 100px;
+}
+.oa-manage .content .right .my-table .ant-table-thead > tr > th {
+  background: #EDEEEE;
+  font-weight: bold;
+}
+.oa-manage .content .right .my-table .ant-table-pagination.ant-pagination {
+  padding-right: 20px;
+}
+.oa-manage .content .right .my-table .ant-table-thead > tr > th,
+.oa-manage .content .right .my-table .ant-table-tbody > tr > td,
+.oa-manage .content .right .my-table .ant-table tfoot > tr > th,
+.oa-manage .content .right .my-table .ant-table tfoot > tr > td {
+  padding: 10px 16px;
+  color: #666;
+  font-size: 12px;
+}
+.oa-manage .content .right .my-table .ant-table-tbody > tr:nth-child(2n) > td {
+  background-color: rgba(238, 238, 238, 0.25);
+}
+.oa-manage .hideExpand .tree {
+  transform: translateX(-260px);
+}
+.oa-manage .hideExpand .right {
+  width: calc(100% - 5px);
+  transform: translateX(-260px);
+}

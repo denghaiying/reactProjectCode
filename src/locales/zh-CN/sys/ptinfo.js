@@ -1,0 +1,28 @@
+export default {
+  'e9.sys.ptinfo.title': '平台信息',
+  'e9.sys.ptinfo.base.title': '基础信息',
+  'e9.sys.ptinfo.psw.title': '安全设置',
+  'e9.sys.ptinfo.ver.title': '版本信息',
+
+  'e9.sys.ptinfo.r.id': '平台编号',
+  'e9.sys.ptinfo.r.ptinfoName': '平台名称',
+  'e9.sys.ptinfo.r.ptinfoConame': '公司',
+  'e9.sys.ptinfo.r.ptinfoLxr': '联系人',
+  'e9.sys.ptinfo.r.ptinfoTel': '电话',
+  'e9.sys.ptinfo.r.ptinfoPtver': '平台版本',
+  'e9.sys.ptinfo.r.ptinfoDbver': '数据版本',
+  'e9.sys.ptinfo.r.ptinfoPwrule': '组成规则',
+  'e9.sys.ptinfo.r.ptinfoPwlen': '最短长度',
+  'e9.sys.ptinfo.r.ptinfoPwdiff': '新旧密码相同',
+  'e9.sys.ptinfo.r.ptinfoPwdays': '强制过期',
+  'e9.sys.ptinfo.r.ptinfoPwwarndays': '过期提醒',
+  'e9.sys.ptinfo.r.copyright': '版权',
+  'e9.sys.ptinfo.r.logo': 'Logo',
+  'e9.sys.ptinfo.r.tbg': '标题背景',
+
+  'e9.sys.ptinfo.r.rule.letter': '字母',
+  'e9.sys.ptinfo.r.rule.num': '数字',
+  'e9.sys.ptinfo.r.rule.ltrnum': '字母和数字',
+  'e9.sys.ptinfo.r.rule.ltr2num': '字母或数字',
+  'e9.sys.ptinfo.r.rule.ltrnumchar': '字母数字和字符',
+};

@@ -1,0 +1,32 @@
+export default {
+  'e9.visdep.temman.title': '预定义模板管理',
+  'e9.visdep.temman.temmanCode': '模板编码',
+  'e9.visdep.temman.temmanName': '模板名称',
+  'e9.visdep.temman.temmanContents': '模板简介',
+  'e9.visdep.temman.temmanType': '模板类型',
+  'e9.visdep.temman.common': '通用',
+  'e9.visdep.temman.pmgndirId': '所属项目',
+  'e9.visdep.temman.temmanTheirsys': '所属系统',
+  'e9.visdep.temman.temmanSysvers': '所属系统版本',
+  'e9.visdep.temman.temmanVersion': '版本号',
+  'e9.visdep.temman.temmanSkills': '所需技术',
+  'e9.visdep.temman.temmanInstalls': '安装内容',
+
+  'e9.visdep.temman.windows': 'windows系统',
+  'e9.visdep.temman.linux': 'linux系统',
+  'e9.visdep.temman.others': '其他系统',
+  'e9.visdep.temman.Tomcat': 'Tomcat',
+  'e9.visdep.temman.Java': 'Java',
+  'e9.visdep.temman.PHP': 'PHP',
+  'e9.visdep.temman.Python': 'Python',
+  'e9.visdep.temman.Nodejs': 'Nodejs',
+  'e9.visdep.temman.Ruby': 'Ruby',
+  'e9.visdep.temman.Go': 'Go',
+  'e9.visdep.temman.download': '模版导出',
+
+  'e9.visdep.temman.temmanBsplace': '部署位置',
+  'e9.visdep.temman.temmanBscommand': '部署命令',
+  'e9.visdep.temman.temmanFile': '部署文件',
+  'e9.visdep.temman.temmanDownlocation': '部署文件下载位置',
+
+};

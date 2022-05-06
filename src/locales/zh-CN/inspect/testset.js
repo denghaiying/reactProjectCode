@@ -1,0 +1,17 @@
+export default {
+  'e9.testset.title': '检测设置',
+  'e9.testset.iptcfgType': '检测类型',
+  'e9.testset.iptcfgCode': '编码',
+  'e9.testset.iptcfgName': '名称',
+  'e9.testset.iptcfgExpr': '检测表达式',
+  'e9.testset.itemDescription': '条目著录项',
+  'e9.testset.theOriginalType': '原文类型',
+  'e9.testset.originalDPI': '原文DPI',
+  'e9.testset.theOriginalContent': '原文内容',
+  'e9.testset.originalEXIF': '原文EXIF',
+  'e9.testset.theOriginalNumber': '原文数量',
+  'e9.testset.tmywpp': '条目原文匹配',
+  'e9.testset.ywtmpp': '原文条目匹配',
+  'e9.testset.tmywnrpp': '条目原文内容匹配',
+  'e9.testset.tmywslpp': '条目原文数量匹配',
+};

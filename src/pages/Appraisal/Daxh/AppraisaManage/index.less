@@ -1,0 +1,47 @@
+@import '../../../../styles/mixin.less';
+.office-manage{
+    background-color: #fff;
+    padding: 0 10px;
+    position: relative;
+    height: calc(100%);
+    .main-content{
+        position: relative;
+        display: flex;
+        overflow-x: hidden;
+        height: calc(100vh - 10px);
+        .left-tree{
+            width: 220px;
+            height: 100%;
+            background-color: #fff;
+            padding: 20px 10px;
+            box-sizing: border-box;
+            position: absolute;
+            transform: translateX(-220px);
+            transition: transform .3s ease;
+            border-right: 1px solid #E5E5E5;
+        }
+        .file-content{
+            box-sizing: border-box;
+            padding: 10px 15px;
+            width: calc(100% - 20px);
+            position: relative;
+            left: 20px;
+            transition: all .3s ease;
+        }
+    }
+    .isExpand{
+        .left-tree{
+            transform: translateX(0);
+        }
+        .file-content{
+            width: calc(100% - 220px);
+            left: 220px;
+        }
+        .collapse-icon{
+            right: 0 !important;
+        }
+        .left-arrow{
+            display: inline !important;
+        }
+    }
+}

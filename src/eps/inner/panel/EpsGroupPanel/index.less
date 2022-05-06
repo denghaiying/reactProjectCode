@@ -1,0 +1,322 @@
+@import '../../../../styles/mixin.less';
+
+.form-row{
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.form-item{
+  display: flex;
+  font-size: 12px;
+  margin-left:40px
+}
+
+.btns-group{
+  border-top: 1px solid #E5E5E5;
+  height: 50px;
+}
+.table{
+  padding: 0 10px;
+}
+.tabs{
+  margin-left:10px;
+  height: calc(100% - 140px);
+  min-height: calc(100% - 140px);
+  .ant-tabs-card{
+    height: 100%;
+    .ant-tabs-content-holder{
+      height: 100%;
+      .ant-tabs-content{
+        height: 100%;
+        .ant-tabs-tabpane-active{
+          height: 100%;
+          .group-table {
+            height: calc(100%);
+            //  ##z-index: 10;
+            position: relative;
+            .ant-spin-nested-loading{
+              height: 100%;
+              .ant-spin-container{
+                height: 100%;
+                .ant-table{
+                  height: calc(100% - 62px);
+                  .ant-table-container{
+                    height: 100%;
+                    .ant-table-content{
+                      height: 100%;
+                      overflow: auto !important;
+                      .ant-table-body{
+                        height: calc(100% - 39px);
+                      }
+                      .ant-table-tbody > tr > td {
+                        &:last-child {
+                          button {
+                            margin-right: 5px;
+                            min-width: 20px;
+                            width: 20px;
+                            height: 20px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .ant-table-expanded-row-fixed{
+              min-height: 620px;
+            }
+            .ant-empty{
+              margin-top: 200px;
+            }
+            .ant-table-thead > tr > th{
+              background: #EDEEEE;
+              font-weight: bold;
+            }
+            .ant-table-pagination.ant-pagination{
+              padding-right: 20px;
+              font-size: 12px;
+            }
+            .ant-table-thead > tr > th{
+              padding: 10px 16px;
+            }
+            .ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td{
+              padding: 6px;
+              color: #666;
+              font-size: 12px;
+          
+            }
+            .ant-table-tbody > tr{
+              &:nth-child(2n) {
+                &>td{
+                  background-color: #fbfbfb;
+                }
+              }
+            }
+            .ant-table-tbody > tr > td {
+              &:last-child {
+                button {
+                  margin-right: 5px;
+                  min-width: 20px;
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.search{
+  padding-right:160px;
+  height: 50px;
+  .ant-form-item-label{
+    margin-right: 1vw;
+  }
+  .row{
+    .flexBetween;
+    .form-item{
+      width: 45%;
+      display: flex;
+      .next-form-item-label{
+        font-size: 12px;
+        width: 100px;
+        text-align: right;
+      }
+      .next-form-item-control{
+        width: calc(100% - 120px);
+        input{
+          height: 32px;
+          font-size: 12px;
+        }
+        .next-input{
+          height: 32px;
+        }
+        .next-select-single.next-no-search{
+          width: 100%;
+        }
+      }
+    }
+    .worker{
+      .flexBetween;
+    }
+  }
+
+  .ant-form-item{
+    margin-bottom: 15px;
+  }
+  .ant-form-item-label > label{
+    font-size: 12px;
+    color: #999999;
+  }
+  .ant-input{
+    font-size: 12px;
+  }
+  .ant-select{
+    font-size: 12px !important; 
+    input{
+      height: 30px;
+    }
+    .ant-select-selection-placeholder{
+      line-height: 30px;
+    }
+  }
+  .ant-input-number{
+    width: 100%;
+    .ant-input-number-handler-wrap{
+      opacity: 1;
+    }
+}
+.ant-picker-input > input:placeholder-shown{
+  font-size: 12px;
+}
+}
+
+.btns{
+  margin-top:20px;
+  margin-left: -108px;
+}
+
+.my-table {
+  .ant-table-thead > tr > th{
+    background: #EDEEEE;
+    font-weight: bold;
+  }
+  .ant-table-pagination.ant-pagination{
+    padding-right: 20px;
+  }
+  .ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td{
+    padding: 10px 16px;
+    color: #666;
+    font-size: 12px;
+  }
+  .ant-table-tbody > tr{
+    &:nth-child(2n) {
+      &>td{
+        background-color: rgba(238, 238, 238, .25);
+      }
+    }
+  }
+  .ant-table-row-selected>td{ 
+    background: #e6f7ff !important; 
+  }
+}
+
+.detail-oa{
+  color: #333;
+  .ant-drawer-content-wrapper{
+    padding: 0;
+    height: 100% !important;
+    .ant-drawer-body{
+      padding: 0;
+      padding-bottom: 20px;
+    }
+  }
+  .title{
+    font-size: 16px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .detail-content{
+    padding: 0 1vw;
+    .ant-card-body{
+      padding: 0px;
+    }
+    .sec-title{
+      padding: 2px 0 7px 30px;
+      font-size: 14px;
+      font-weight: bold;
+      border-bottom: 1px solid #E5E5E5;
+      position: relative;
+      .flexLeft;
+      .title-icon{
+        width: 4px;
+        height: 14px;
+        background-color: #3F8EFF;
+        margin-right: 8px;
+      }
+    }
+    .editTable{
+      margin-top: 10px;
+      .ant-input-number{
+        width: 70%;
+      }
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: keep-all;
+
+       
+  }
+    .form-content{
+      .form-field{
+        padding: 3px 0;
+      }
+      .ant-form-item{
+        margin-bottom: 15px;
+      }
+      .ant-form-item-label > label{
+        font-size: 12px;
+        color: #999999;
+      }
+      .ant-input{
+        font-size: 12px;
+          height: 22px;
+      }
+      .ant-select{
+        font-size: 12px !important; 
+        input{
+          height: 32px;
+        }
+        .ant-select-selection-placeholder{
+          line-height: 30px;
+        }
+      }
+      .ant-input-number{
+        width: 100%;
+        .ant-input-number-handler-wrap{
+          opacity: 1;
+        }
+      }
+      .ant-picker{
+        width: 100%;
+        padding: 5px 11px 5px;
+        input{
+          font-size: 12px;
+          height: 21px;
+        }
+      }
+      .line{
+        height: 1px;
+        border-bottom: 2px dashed #E5E5E5;
+        width: 92%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+      }
+    }
+}
+}
+
+
+.ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table, .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table{
+  font-size: 12px;
+}
+.ant-input:placeholder-shown{
+  font-size: 12px;
+  height:22px
+}
+
+.ant-layout, .ant-layout * {
+  font-size: 12px;
+}
+
+.ant-input-group .ant-input {
+  height:32px
+}

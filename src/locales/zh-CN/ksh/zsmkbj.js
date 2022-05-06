@@ -1,0 +1,38 @@
+export default {
+  'e9.ksh.zsmkbj.title': '模块管理',
+  'e9.ksh.zsmkbj.zsmkbjbh': '模块编号',
+  'e9.ksh.zsmkbj.zsmkbjmc': '模块标题',
+  'e9.ksh.zsmkbj.zsmkbjdescription': '副标题',
+  'e9.ksh.zsmkbj.zsmkbjorder': '图表位置序号',
+  'e9.ksh.zsmkbj.zsmkbjsize': '图表尺寸大小',
+  'e9.ksh.zsmkbj.zsmkbjcolors': '主要颜色',
+  'e9.ksh.zsmkbj.zsmkbjtype': '图表类型',
+  'e9.ksh.zsmkbj.zsmkbjmultiple': '系列',
+  'e9.ksh.zsmkbj.zsmkbjZsmkId': '所属菜单',
+  'e9.ksh.zsmkbj.zsmkbjlx': '类型',
+  'e9.ksh.zsmkbj.zsmkbjurl': 'URL',
+  'e9.ksh.zsmkbj.zsmkbjsql': 'SQL',
+  'e9.ksh.zsmkbj.zsmkbjsqlz': '外层SQL',
+  'e9.ksh.zsmkbj.zsmkbjsqlzsm': '外层SQL说明',
+  'e9.ksh.zsmkbj.zsmkbjqzfs': '取值方式',
+  'e9.ksh.zsmkbj.zsmkbjqtmc': '图表标题',
+  'e9.ksh.zsmkbj.zsmkbjsqlsm': '设计SQL说明',
+  'e9.ksh.zsmkbj.zsmkbjrefresh': '刷新时间',
+
+  'e9.ksh.zsmkbj.zsmkbjwidth': '图表宽度',
+  'e9.ksh.zsmkbj.zsmkbjheight': '图表高度',
+  'e9.ksh.zsmkbj.zsmkbjpositionX': '横坐标',
+  'e9.ksh.zsmkbj.zsmkbjpositionY': '纵坐标',
+
+  'e9.ksh.zsmkbj.zsmkbjzbsm': '坐标高度说明',
+  'e9.ksh.zsmkbj.zsmkbjwidthsm': '宽度说明',
+  'e9.ksh.zsmkbj.zsmkbjheightsm': '高度说明',
+  'e9.ksh.zsmkbj.zsmkbjXsm': '横坐标说明',
+  'e9.ksh.zsmkbj.zsmkbjYsm': '纵坐标说明',
+  'e9.ksh.zsmkbj.zsmkbjmoreUrl': '更多连接',
+  'e9.ksh.zsmkbj.zsmkbjstate': '停用',
+  'e9.ksh.zsmkbj.fgid': '系统',
+
+
+  'e9.ksh.zsmkbj.zsmkbjfjs': '附件数',
+};

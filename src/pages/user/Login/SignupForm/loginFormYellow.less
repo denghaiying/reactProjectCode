@@ -1,0 +1,110 @@
+@import '../../../../styles/css/base';
+
+.login-content {
+  width: 600px;
+  height: 400px;
+  position: fixed;
+  top: calc(~"50vh - 300px");
+  left: calc(~"50vw - 300px");
+  transition: all .5s ease-in-out 0s;
+  .login-form-yellow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .logo {
+      height: 50px;
+      width: 100%;
+      text-align: center;
+      margin: 30px 0px;
+      line-height: 50px;
+      font-size: 32px;
+      color: #fff;
+      vertical-align: middle;
+      img {
+        margin-right: 10px;
+      }
+    }
+    .form-content {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      left: 100px;
+      background-color: rgba(41, 56, 68, 0.5);
+      border-radius: 10px;
+      .form-header{
+        width: 100%;
+        height: 80px;
+        .form-title {
+          width: 100%;
+          height: 40px;
+          color: #fff;
+          text-align: center;
+          line-height: 40px;
+          font-size: 24px;
+          top: 20px;
+          margin: 20px 0px;
+        }
+        .form-code{
+          width: 80px;
+          height: 80px;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          background: url(../../../../styles/img/sanjiao.png) no-repeat;
+          background-size: 100% 100%;
+          img{
+            float: right;
+            margin: 10px 10px 0px 0px;
+          }
+        }
+      }
+      .next-form {
+        .next-form-item {
+          .next-col {
+            margin: 0 auto;
+            .next-checkbox-wrapper {
+              float: right;
+              .next-checkbox-inner {
+                border: 1px solid #F89132;
+              }
+              .next-checkbox-label {
+                color: #fff;
+              }
+            }
+            .next-checkbox-wrapper.checked {
+              .next-checkbox {
+                .next-checkbox-inner {
+                  background-color: #F89132;
+                }
+                &:hover {
+                  background-color: #F89132;
+                }
+              }
+            }
+            .next-btn {
+              width: 100%;
+              margin: 40px auto;
+              display: block;
+              height: 40px;
+              font-size: 16px;
+              border-radius: 20px;
+            }
+          }
+        }
+      }
+    }
+    .qrcode{
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      background: url('../../../../styles/img/qr-code.png') no-repeat;
+      background-size: 100% 100%;
+      opacity: 0;
+      transition: .3s;
+      border-radius: 2px;
+      top: 180px;
+      left: 140px;
+    }
+  }
+}

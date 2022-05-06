@@ -1,0 +1,17 @@
+.desktop{
+  .colitem { 
+    width:150px; 
+    height:150px; 
+    padding:50px;
+    margin:0 auto;  
+    box-sizing:border-box; 
+    background:url(../../styles/images/ico_bg.png) no-repeat center;
+    img {
+      width:48px; 
+      height:48px;
+    }
+    
+  }
+  a{ color:#4bc1e1;}
+  a:hover { color:#4bc1e1;}
+}

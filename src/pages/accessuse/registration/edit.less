@@ -1,0 +1,167 @@
+@import '../../../styles/mixin.less';
+.regist-page{
+  font-size: 14px;
+  .top{
+    background-color: #fff;
+    margin-bottom: 10px;
+    .title{
+      padding: 0 20px;
+      height: 50px;
+      border-bottom: 1px solid #eee;
+      .flexBetween;
+      .title-name{
+        color: #333;
+      }
+      .btns{
+        .btn{
+          margin-left: 15px;
+          img{
+            width: 22px;
+          }
+        }
+      }
+    }
+    .file-container{
+      padding: 20px;
+      display: flex;
+      .left{
+        width: 120px;
+        .pic{
+          width: 120px;
+          height: 140px;
+          border-radius: 4px;
+          background-color: #E0E8F8;
+          display: block;
+          margin: 10px auto;
+        }
+        .pic-text{
+          text-align: center;
+          color: #666;
+        }
+      }
+      .right{
+        width: calc(100% - 120px);
+        .my-form{
+          border-bottom: 2px dashed #E5E5E5;
+        }
+        .row{
+          .flexBetween;
+          .form-item{
+            width: 45%;
+            display: flex;
+            position: relative;
+            .next-form-item-label{
+              font-size: 14px;
+              width: 100px;
+              text-align: right;
+              line-height: 32px;
+              color: #999;
+            }
+            .next-form-item-control{
+              width: calc(100% - 120px);
+              input{
+                height: 32px;
+                font-size: 14px;
+              }
+              .next-input{
+                height: 32px;
+              }
+              .next-select-single.next-no-search{
+                width: 100%;
+              }
+            }
+            .float-text{
+              color: #3F8EFF;
+              position: absolute;
+              right: -25px;
+              top: 9px;
+              cursor: pointer;
+            }
+            &:nth-child(3) {
+              .next-form-item-control{
+                width: calc(100% - 140px);
+              }
+            }
+          }
+          .worker{
+            .flexBetween;
+          }
+        }
+        .bot-search{
+          padding-left: 100px;
+          padding-top: 20px;
+          .search{
+            width: 560px;
+            .next-input-group{
+              height: 32px;
+              .next-select{
+                height: 32px;
+                input{
+                  height: 32px;
+                }
+              }
+              .next-search-btn{
+                height: 34px !important;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom{
+    background-color: #fff;
+    .tree-content{
+      border-bottom: 1px solid #E5E5E5;
+      display: flex;
+      justify-content: space-between;
+      min-height: 325px;
+      .tree{
+        padding: 10px 15px;
+        border-right: 1px solid #E5E5E5;
+        height: 533px;
+        overflow-y: auto;
+      }
+      .tree-right{
+        margin: 20px;
+        width: calc(100% - 187px);
+      }
+      .paginate{
+        margin-top: 10px;
+        text-align: right;
+      }
+    }
+    .control{
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      height: 50px;
+      border-bottom: 1px solid #E5E5E5;
+      .title{
+        color: #333333;
+        margin-right: 20px;
+      }
+      .label{
+        color: #999999;
+        margin: 0 10px 0 30px;
+      }
+      .next-btn.next-medium{
+        height: 14px !important;
+      }
+      .num-picker{
+        width: 4vw;
+      }
+    }
+    .btns-bottom{
+      padding: 0 20px;
+      height: 50px;
+      .flexCenter;
+      justify-content: flex-end;
+      .btn{
+        margin-left: 20px;
+        width: 80px;
+      }
+    }
+  }
+}

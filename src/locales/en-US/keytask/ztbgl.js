@@ -1,0 +1,26 @@
+export default {
+  'e9.keytask.ztbgl.title': 'Bidding Title',
+  'e9.keytask.ztbgl.ztbglCode': 'Code',
+  'e9.keytask.ztbgl.ztbglTitle': 'Title',
+  'e9.keytask.ztbgl.ztbglType': 'Type',
+  'e9.keytask.ztbgl.ztbglFbrq': 'Release Date',
+  'e9.keytask.ztbgl.ztbglMoney': 'Money',
+  'e9.keytask.ztbgl.fzr': 'PrincipalMan',
+  'e9.keytask.ztbgl.ssgs': 'Company',
+  'e9.keytask.ztbgl.lxfs': 'Phone',
+  'e9.keytask.ztbgl.ztbglJfdb': 'Contracting Officer',
+  'e9.keytask.ztbgl.ztbglFjlx': 'Type of Attachment ',
+  'e9.keytask.ztbgl.filegrpId': 'Attachment',
+  'e9.keytask.ztbgl.sc': 'Uploading',
+
+  'e9.keytask.ztbgl.ztbglType0': 'Design bidding',
+  'e9.keytask.ztbgl.ztbglType1': 'Construction supervision bidding',
+  'e9.keytask.ztbgl.ztbglType2': 'Construction bidding',
+  'e9.keytask.ztbgl.ztbglFjlx0': 'Bidding Book',
+  'e9.keytask.ztbgl.ztbglFjlx1': 'Bidding Document',
+  'e9.keytask.ztbgl.ztbglFjlx2': 'Tender Document',
+  'e9.keytask.ztbgl.ztbglFjlx3': 'Bid-Winning Notice',
+
+  'e9.keytask.ztbgl.zdsc': 'Automatic Generation',
+  'e9.keytask.ztbgl.ztbglOwnerphone': 'ztbglOwnerphone',
+};

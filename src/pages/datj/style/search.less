@@ -1,0 +1,56 @@
+@import '../../../styles/mixin.less';
+.statistic-page{
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid #E5E5E5;
+  padding: 1vw;
+  font-size: 14px;
+  .search-content{
+    border-bottom: 1px solid #E5E5E5;
+    .cell{
+      display: inline-block;
+      width: 25%;
+      box-sizing: border-box;
+      padding-right: 2vw;
+      margin-bottom: 20px;
+      .label{
+        font-size: 14px;
+        color: #999;
+        width: 90px;
+        padding-right: 15px;
+        text-align: right;
+        display: inline-block;
+      }
+      .input{
+        width: calc(100% - 100px);
+      }
+      .up{
+        transition: transform .5s ease;
+      }
+      .rotate{
+        transform: rotateX(180deg);
+      }
+    }
+    .collapse{
+      margin-bottom: 20px;
+    }
+    .hidden{
+      display: none;
+    }
+  }
+  .btns{
+    margin: 20px 0;
+    .btn{
+      margin-right: 15px;
+    }
+  }
+  .count{
+    padding: 20px 8vw;
+    &>span{
+      display: inline-block;
+      width: 33%;
+      text-align: center;
+      color: #666;
+    }
+  }
+}

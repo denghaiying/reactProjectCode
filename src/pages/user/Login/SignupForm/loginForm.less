@@ -1,0 +1,197 @@
+@import '../../../../styles/css/base';
+.login-content{
+  width: 600px;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  transition: all .5s ease-in-out 0s;
+  .light-icon{
+    position: absolute;
+    background: url('../../../../styles/img/login-light.png') no-repeat center center;
+    width: 100%;
+    height: 200px;
+    top: -110px;
+    //  ##z-index: 0;
+    opacity:0.5;
+  }
+  .login-form{
+    position: absolute;
+    background: url('../../../../styles/img/login-form.png') no-repeat center;
+    background-size: 100% 100%;
+    width: 480px;
+    height: 600px;
+    left: 60px;
+    //  ##z-index: 1;
+    .logo{
+      text-align: center;
+      margin: 40px 0px 16px 0px;
+    }
+    .title{
+      text-align: center;
+      font-size: 34px;
+      color: rgb(207, 211, 218);
+      margin-bottom: 40px;
+    }
+    .iconfont{
+      font-size: 24px;
+      color: #2db7f5;
+    }
+    form{
+      .next-row {
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        /*border-bottom: 1px solid #3A5781;*/
+        .next-input {
+          background: transparent;
+          border: none;
+          color: #fff;
+          font-size: 16px;
+          padding-left: 10px;
+          border-radius: 0;
+          input {
+            color: #fff;
+          }
+        }
+      }
+      .login-form-item{
+        border-bottom: 1px solid #3A5781;
+      }
+      .login-form-item:hover {
+        border-bottom: 1px solid #00c6ff;
+      }
+      .next-form-item{
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        .next-btn {
+          width: 300px;
+          margin: 40px auto;
+          display: block;
+          height: 50px;
+          font-size: 16px;
+        }
+        .next-checkbox-wrapper{
+          .next-checkbox-label{
+            display: inline-block;
+            padding-left: 10px;
+            line-height: 19px;
+            font-size: 14px;
+            color: #fff;
+          }
+        }
+      }
+      .next-checkbox-wrapper.checked{
+        .next-checkbox{
+          .next-checkbox-inner{
+            background-color: #2d88f8;
+          }
+          &:hover{
+            background-color: #2d88f8;
+          }
+        }
+      }
+    }
+    .code-div{
+      display: block;
+      width: 38px;
+      height: 38px;
+      margin: 0 auto;
+      background: url('../../../../styles/img/login-code.png') no-repeat;
+    }
+    .code-back{
+      display: block;
+      width: 38px;
+      height: 38px;
+      margin: 0 auto;
+      background: url('../../../../styles/img/login-back.png') no-repeat;
+    }
+    .qrcode{
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      background: url('../../../../styles/img/qr-code.png') no-repeat;
+      background-size: 100% 100%;
+      opacity: 0;
+      transition: .3s;
+      border-radius: 2px;
+      top: 175px;
+      left: 80px;
+    }
+  }
+  .water-area{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 150px;
+    top: 570px;
+    //  ##z-index: 0;
+    .point{
+      position: absolute;
+      width: 50px;
+      height: 15px;
+      border-radius: 50%;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .point-dot{
+      //  ##z-index: 3;
+      background-color: #00255b;
+      opacity: .5;
+    }
+    .point-1{
+      //  ##z-index: 1;
+      width: 100%;
+      height: 100px;
+    }
+    .point-2{
+      //  ##z-index: 2;
+      width: 100%;
+      height: 100px;
+    }
+
+    .point-1:after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 50%;
+      background-color: #00c1de;
+      opacity: .5;
+      margin: auto;
+      animation: ripple 4.5s ease-out 225ms infinite;
+    }
+    .point-2:after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 50%;
+      background-color: #00c1de;
+      opacity: .2;
+      margin: auto;
+      animation: ripple 4.5s ease-out 1575ms infinite;
+    }
+    @keyframes ripple {
+      0% {
+        width: 50px;
+        height: 15px;
+        opacity: 1;
+      }
+      100% {
+        width: 300px;
+        height: 100px;
+        opacity: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,182 @@
+@import '../../styles/css/base';
+.clear{
+ clear: both;
+}
+
+@import '../../styles/mixin.less';
+.main-page{
+  background-color: #fff;
+  height: 100%;
+  .left-nav{
+    width: 200px;
+    height: 100%;
+    background: #F4F8FF;
+    overflow-y: auto;
+    /deep/ .next-menu{
+      border: 0;
+      box-shadow: unset;
+      .next-menu-item-inner{
+        font-size: 14px;
+      }
+      .next-menu-sub-menu .next-nav-item{
+        padding-left: 50px !important;
+      }
+      .next-selected{
+        background-color: #3f8eff !important;
+        span{
+          color: #fff !important;
+        }
+      }
+    }
+  }
+  .layout-main{
+    .pull-right .page-content{
+      .main-body{
+         display: flex;
+          height: calc(100% - 60px);
+   
+         width: calc(100% - 200px);
+      .top-nav{
+        height: 50px;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+        position: relative;
+        display: flex;
+        width: 100%;
+        .arrow-l{
+          font-size: 22px;
+          color: #999;
+          width: 50px;
+          line-height: 50px;
+          cursor: pointer;
+        }
+        .arrow-r{
+          font-size: 22px;
+          color: #999;
+          width: 50px;
+          line-height: 50px;
+          cursor: pointer;
+        }
+        .cells{
+          width: calc(100% - 100px);
+          display: flex;
+          overflow-x: hidden;
+          li{
+            list-style: none;
+            height: 100%;
+            cursor: pointer;
+            .flexCenter;
+            padding: 0 10px;
+            font-size: 14px;
+            box-sizing: border-box;
+            color: #333;
+            flex-wrap: nowrap;
+            border-bottom: 2px solid #fff;
+            .close{
+              color: #999;
+              visibility: hidden;
+              margin-left: 10px;
+            }
+            .cell-name{
+              white-space: nowrap;
+            }
+          }
+          .selected{
+            border-bottom: 2px solid #81BCFF;
+            .close{
+              visibility: visible;
+            }
+          }
+          .inner{
+            display: flex;
+            transition: transform .5s ease-in-out;
+          }
+        }
+      }
+      .child{
+        height: calc(100% - 50px);
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+      }
+      }
+    }
+  }
+}
+
+
+.main-body{
+  display: flex;
+  height: calc(100% - 60px);
+  .right-content{
+    width: calc(100%);
+    .top-nav{
+      height: 50px;
+      background-color: #fff;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+      position: relative;
+      display: flex;
+      width: 100%;
+      .arrow-l{
+        font-size: 22px;
+        color: #999;
+        width: 50px;
+        line-height: 50px;
+        cursor: pointer;
+      }
+      .arrow-r{
+        font-size: 22px;
+        color: #999;
+        width: 50px;
+        line-height: 50px;
+        cursor: pointer;
+      }
+      .cells{
+        width: calc(100% - 100px);
+        display: flex;
+        overflow-x: hidden;
+        li{
+          list-style: none;
+          height: 100%;
+          cursor: pointer;
+          .flexCenter;
+          padding: 0 10px;
+          font-size: 14px;
+          box-sizing: border-box;
+          color: #333;
+          flex-wrap: nowrap;
+          border-bottom: 2px solid #fff;
+          .close{
+            color: #999;
+            visibility: hidden;
+            margin-left: 10px;
+          }
+          .cell-name{
+            white-space: nowrap;
+          }
+        }
+        .selected{
+          border-bottom: 2px solid #81BCFF;
+          .close{
+            visibility: visible;
+          }
+        }
+        .inner{
+          display: flex;
+          transition: transform .5s ease-in-out;
+        }
+      }
+    }
+    .child{
+      height: calc(100vh - 120px);
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+      background-color: #eeeeee;
+    }
+  }
+}
+
+  img{
+  vertical-align: middle
+}

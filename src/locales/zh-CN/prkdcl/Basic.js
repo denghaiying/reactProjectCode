@@ -1,0 +1,18 @@
+export default {
+  'e9.prkdcl.Basic.basicName': '材料名称',
+  'e9.prkdcl.Basic.basicType': '材料类型',
+  'e9.prkdcl.Basic.basicFj': '是否已提交',
+  'e9.prkdcl.Basic.basicFileid': '附件上传',
+  'e9.prkdcl.Basic.title': '基础材料',
+  'e9.prkdcl.Basic.yes': '是',
+  'e9.prkdcl.Basic.originalandcopy': '原件与复印件',
+  'e9.prkdcl.Basic.script': '原件',
+  'e9.prkdcl.Basic.copy': '复印件',
+  'e9.prkdcl.Basic.basicStuff': '材料分类',
+  'e9.prkdcl.Basic.currency': '通用文件',
+  'e9.prkdcl.Basic.forever': '永久停车场材料',
+  'e9.prkdcl.Basic.temporary': '临时停车场材料',
+  'e9.prkdcl.Basic.import': '导入基础材料',
+  'e9.prkdcl.Basic.export': '导出基础材料',
+  'e9.prkdcl.Basic.template': '导出模板',
+};

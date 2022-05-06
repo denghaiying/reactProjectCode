@@ -1,0 +1,178 @@
+@import '../../../styles/mixin.less';
+.hall-regist-zbhttz{
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  font-size: 14px;
+  overflow: auto;
+   .next-input{
+    input{
+      height: 32px;
+      line-height: 32px;
+    }
+  }
+  .control{
+    height: 70px;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    .label{
+      margin: 0 10px;
+    }
+    .input{
+      margin-right: 30px;
+      width: 10vw;
+    }
+    .select{
+      margin-right: 30px;
+      width: 10vw;
+    }
+    .select-1{
+      margin-right: 10px;
+      width: 10vw;
+    }
+    .btn{
+      margin-left: 20px;
+      width: 80px;
+    }
+  }
+  .main-content{
+    padding: 15px;
+    .btns-control{
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      .custome-btn{
+        width: 80px;
+        height: 30px;
+        .flexCenter;
+        border-radius: 4px;
+        border: 1px solid #79B0FF;
+        margin-right: 15px;
+        color: @primary-color;
+        cursor: pointer;
+        img{
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+    height: calc(100%- 50px);
+    margin-bottom: 15px;
+    // overflow-x: auto;
+    // overflow-y: auto;
+    .record-table {
+      // #//  ##z-index: 10;
+      position: relative;
+      height: calc(100% - 30px);
+      .ant-spin-nested-loading {
+        height: 100%;
+        .ant-spin-container {
+          height: 100%;
+          .ant-table {
+            width: calc(100%);
+            height: calc(100% - 62px);
+            .ant-table-container {
+              height: 100%;
+              .ant-table-content {
+                height: 100%;
+                overflow: auto !important;
+                .ant-table-body {
+                  height: calc(100% - 39px);
+                }
+                .ant-table-tbody > tr > td {
+                  &:last-child {
+                    button {
+                      width: 20px;
+                      min-width: 20px;
+                      height: 20px;
+                      margin-right: 5px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .ant-table-expanded-row-fixed {
+        min-height: 620px;
+      }
+      .ant-empty {
+        margin-top: 100px;
+      }
+      .ant-table-thead > tr > th{
+        background: #EDEEEE;
+       font-weight: bold;
+      }
+      .ant-table-pagination.ant-pagination {
+        margin: 5px 0 !important;
+        padding-right: 20px;
+        font-size: 12px;
+      }
+      .ant-table-thead > tr > th {
+        padding: 10px 16px;
+      }
+      .ant-table-thead > tr > th,
+      .ant-table-tbody > tr > td,
+      .ant-table tfoot > tr > th,
+      .ant-table tfoot > tr > td {
+        padding: 6px;
+        color: #666;
+        font-size: 12px;
+      }
+
+      .ant-table-tbody > tr > td {
+        &:last-child {
+          button {
+            width: 20px;
+            min-width: 20px;
+            height: 20px;
+            margin-right: 5px;
+          }
+        }
+        &:nth-child(1) {
+          button {
+            float: left;
+            width: 20px;
+            min-width: 20px;
+            height: 20px;
+            margin-left: 5px;
+          }
+        }
+        &:nth-child(2) {
+          button {
+            float: left;
+            width: 20px;
+            min-width: 20px;
+            height: 20px;
+            margin-left: 5px;
+          }
+        }
+        &:nth-child(3) {
+          button {
+            float: left;
+            width: 20px;
+            min-width: 20px;
+            height: 20px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  .xjrow{
+     background-color: rgb(242, 243, 154);
+     >td.ant-table-cell-row-hover{
+      background: rgb(242, 245, 80);
+     }
+  }
+  .hjrow{
+    background-color: rgb(138, 163, 247);
+    >td.ant-table-cell-row-hover{
+      background-color: rgb(64, 107, 250);
+     }
+  }
+}

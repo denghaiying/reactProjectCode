@@ -1,0 +1,17 @@
+export default {
+  'e9.main.title': '档案管理系统',
+  'e9.main.licto': '授权使用',
+  'e9.main.nolic': '未授权',
+  'e9.main.nologin': '未登陆',
+  'e9.main.logout': '退出',
+  'e9.main.setting': '主题设置',
+  'e9.main.changepsw': '修改密码',
+  'e9.main.setting.context': '你可以从这里选择主题的布局和皮肤，这里的设置会被保存，下次打开时候会直接应用这些配置',
+  'e9.main.setting.layout': '布局选择',
+  'e9.main.setting.leftmenu': '左侧菜单',
+  'e9.main.setting.topmenu': '顶部菜单',
+  'e9.main.setting.mainpagemenu': '主页菜单',
+  'e9.main.setting.skin': '皮肤选择',
+  'e9.main.setting.skin.default': '默认皮肤',
+  'e9.main.setting.skin.orange': '橙色皮肤',
+};

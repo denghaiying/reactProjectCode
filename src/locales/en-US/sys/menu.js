@@ -1,0 +1,22 @@
+export default {
+  'e9.sys.menu.title': 'Menu',
+  'e9.sys.menu.tree.title': 'Menu',
+  'e9.sys.menu.table.title': 'Functions',
+  'e9.sys.menu.table.moduleName': 'Module Name',
+  'e9.sys.menu.table.FuncName': 'Function Name',
+  'e9.sys.menu.con.sysName': 'System Name',
+  'e9.sys.menu.con.modName': 'Module Name',
+
+  'e9.sys.menu.menuName': 'Chinese name',
+  'e9.sys.menu.menuEname': 'English name',
+  'e9.sys.menu.menuIndex': 'sort',
+  'e9.sys.menu.titlegl': 'Menu management',
+  'e9.sys.menu.editMenu': 'Edit menu',
+  'e9.sys.menu.addMenu': 'Insert menu',
+  'e9.sys.menu.addChildrenMenu': 'Insert submenu',
+  'e9.sys.menu.deleteMenu': 'Delete menu',
+  'e9.sys.menu.rollBack': 'Operating a rollback',
+  'e9.sys.menu.nosaveinfo': 'Data isn\'t saved, continue will lose data',
+  'e9.sys.menu.menutree': 'Menu list',
+  'e9.sys.menu.charu': 'insert',
+};
