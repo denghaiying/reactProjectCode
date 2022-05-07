@@ -25,6 +25,9 @@ import fetch from '../../../utils/fetch';
 import SysStore from '../../../stores/system/SysStore';
 import './Lcdzlk.less';
 import update from 'immutability-helper';
+import { Select } from 'antd';
+
+const { Option } = Select;
 
 
 const Lcdzlk = observer((props) => {
@@ -578,7 +581,7 @@ const Lcdzlk = observer((props) => {
             <Form form={form} layout="inline" colon={false}>
                 <Card style={{ height: '600px', width: '100%' }}>
                     <Row className='rowbox'>
-                        <Col span={8}  style={{marginLeft:1}}>
+                        <Col span={8} style={{ marginLeft: 1 }}>
                             <Form.Item label="档案库名称" name="dakmc">
                                 <Input
                                     className="input"
@@ -589,28 +592,69 @@ const Lcdzlk = observer((props) => {
                                 />
                             </Form.Item>
                         </Col>
-                        <Col span={8} style={{marginLeft:49}}>
+                        <Col span={8} style={{ marginLeft: 49 }}>
                             <Form.Item label="目标单位" name="mbdw">
-                                <TreeSelect
+                                {/* <TreeSelect
                                     style={{ width: 250 }}
                                     placeholder="请选择目标单位"
                                     treeData={LcdzlkStore.dwdata}
                                     treeDefaultExpandAll
                                     allowClear
                                     onChange={handleMbDwChange}
-                                />
+                                /> */}
+
+
+                                <Select
+                                    showSearch
+                                    style={{ width: 250 }}
+                                    placeholder="Search to Select"
+                                    optionFilterProp="children"
+                                    filterOption={(input, option) =>
+                                        option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                                    }
+                                    filterSort={(optionA, optionB) =>
+                                        optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
+                                    }
+                                >
+                                    <Option value="1">Not Identified</Option>
+                                    <Option value="2">Closed</Option>
+                                    <Option value="3">Communicated</Option>
+                                    <Option value="4">Identified</Option>
+                                    <Option value="5">Resolved</Option>
+                                    <Option value="6">Cancelled</Option>
+                                </Select>
                             </Form.Item>
                         </Col>
-                        <Col span={5} style={{marginLeft:49}}>
+                        <Col span={5} style={{ marginLeft: 49 }}>
                             <Form.Item label="目标资料库" name="mbdak">
-                                <TreeSelect
+                                {/* <TreeSelect
                                     style={{ width: 250 }}
                                     placeholder="请选择目标资料库"
                                     treeData={LcdzlkStore.daktreedata}
                                     treeDefaultExpandAll
                                     allowClear
                                 //   onChange={handleMbDakChange}
-                                />
+                                /> */}
+
+<Select
+                                    showSearch
+                                    style={{ width: 250 }}
+                                    placeholder="Search to Select"
+                                    optionFilterProp="children"
+                                    filterOption={(input, option) =>
+                                        option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                                    }
+                                    filterSort={(optionA, optionB) =>
+                                        optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
+                                    }
+                                >
+                                    <Option value="1">Not Identified</Option>
+                                    <Option value="2">Closed</Option>
+                                    <Option value="3">Communicated</Option>
+                                    <Option value="4">Identified</Option>
+                                    <Option value="5">Resolved</Option>
+                                    <Option value="6">Cancelled</Option>
+                                </Select>
                             </Form.Item>
                         </Col>
                     </Row>

@@ -1983,12 +1983,13 @@ const ArchManage = observer((props) => {
       return {
         url: `/api/eps/control/main/dagl/plxg`,
         showFoot: true,
+        useIframe: false,
         // params: filter,
         title: '批量修改',
         // filter,
         // disableRefresh: false,
         width: 500,
-         useIframe: false,
+         
         height: 300,
       };
     },
@@ -2128,6 +2129,8 @@ const ArchManage = observer((props) => {
         params: filter,
         title: '档案查重',
         filter,
+        showFoot: true,
+         useIframe: false,
         width: 1200,
         height: 550,
         fullModal: true,
@@ -2155,6 +2158,8 @@ const ArchManage = observer((props) => {
         params: filter,
         title: '断号查找',
         filter,
+        showFoot: true,
+        useIframe: false,
         width: 1300,
         height: 550,
         fullModal: true,
@@ -2272,6 +2277,8 @@ const ArchManage = observer((props) => {
         title: '综合排序设置',
         filter,
         width: 900,
+        showFoot: true,
+        useIframe: false,
         height: 534,
         fullModal: true,
         modalStyles: {
@@ -2697,10 +2704,12 @@ const ArchManage = observer((props) => {
         params: filter,
         title: '定时批量导出',
         filter,
+        showFoot: true,
+        useIframe: false,
         width: 600,
-        height: 465,
+        height: 380,
         // // fullModal:true,
-        //  modalStyles:{top:0},
+        //  modalStyles:{top:100},
       };
     },
 
@@ -3602,6 +3611,8 @@ const ArchManage = observer((props) => {
         params: filter,
         title: '另存到其它档案库',
         filter,
+        showFoot: true,
+        useIframe: false,
         width: 1080,
         height: 550,
         fullModal: true,
@@ -3715,8 +3726,10 @@ const ArchManage = observer((props) => {
         params: filter,
         title: '原文重命名',
         filter,
+        showFoot: true,
+        useIframe: false,
         width: 900,
-        height: 610,
+        height: 550,
         fullModal: true,
         modalStyles: {
           /// top:15

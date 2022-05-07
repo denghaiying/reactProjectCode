@@ -218,6 +218,47 @@ const getEpsComponent = (props) => {
         return Comp1;
       }
 
+      // 档案查重
+      if (props.url === '/api/eps/control/main/dagl/dakDakcc') {
+        const { default: Comp1 } = await import(
+          '@/eps/control/main/dagl/dacc'
+        );
+        return Comp1;
+      }
+
+      // 断号查找
+      if (props.url === '/api/eps/control/main/dagl/dakDhDhcx') {
+        const { default: Comp1 } = await import(
+          '@/eps/control/main/dagl/dhcz'
+        );
+        return Comp1;
+      }
+
+      // 综合排序设置
+      if (props.url === '/api/eps/control/main/dagl/dakzhpx') {
+        const { default: Comp1 } = await import(
+          '@/eps/control/main/dagl/zhpxsz'
+        );
+        return Comp1;
+      }
+
+
+      // 原文重命名
+      if (props.url === '/api/eps/control/main/dagl/ywcmm') {
+        const { default: Comp1 } = await import(
+          '@/eps/control/main/dagl/ywcmm'
+        );
+        return Comp1;
+      }
+
+      // 定时批量导出
+      if (props.url === '/api/eps/control/main/dagl/pldcgl') {
+        const { default: Comp1 } = await import(
+          '@/eps/control/main/dagl/dspldc'
+        );
+        return Comp1;
+      }
+
       // 盒管理（新）
       if (props.url === '/api/eps/control/main/hgl/openDak') {
         const { default: Comp1 } = await import(
@@ -309,6 +350,14 @@ const getEpsComponent = (props) => {
         const { default: Comp1 } = await import('@/pages/dagl/Dagl/bcdbydak');
         return Comp1;
       }
+
+      // 另存到其他档案库
+      if (props.url === '/api/eps/control/main/dagl/daksaveas') {
+        const { default: Comp1 } = await import('@/pages/dagl/Dagl/bcdbydak');
+        return Comp1;
+      }
+
+
     },
   });
 
